@@ -10,12 +10,12 @@
 
 3.- Desplegar la ayuda con ``` .help ```
 
-![Screenshot](image2.jpg)
+![Screenshot](image3.jpg)
 
-4.- Escribir clásico hola mundo
+4.- Guardar los comandos de la sesion actual con ''' .save [nombre archivo].js '''
 
-![Screenshot](image2.jpg)
+![Screenshot](image4.jpg)
 
 5.- Escribir clásico hola mundo
 
-![Screenshot](image2.jpg)
+![Screenshot](image5.jpg)
