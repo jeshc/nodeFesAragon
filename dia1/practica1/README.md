@@ -1,7 +1,9 @@
 # Consola Node Js
 ### Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la inctalación del cliente ```git ```
+Accedemos al ambiente virtual RELP(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecicción de código javascript.
 
-1.- Iniciar la consola node Js
+
+1.- Iniciar la consola RELP de node Js
 
 ![Screenshot](image1.jpeg)
 
@@ -70,4 +72,18 @@ Ejecutar el archivo desde la consola.
 
 12.- Son cerrar la consola ejecutar ``` > carrera.length ```
 
-![Screenshot](image11.png)
+![Screenshot](image12.png)
+
+#### Number
+
+
+#### Boolean
+
+
+#### Undefined
+
+
+#### Null
+
+
+#### RegExp
