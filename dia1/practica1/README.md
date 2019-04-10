@@ -1,5 +1,5 @@
 # Consola Node Js
-## Usar una consola Linux, si estas usando Windows, emplea la consola `7` Git Bash ´´´que proporciona la inctalación del cliente ```git ```
+### Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ´´´ que proporciona la inctalación del cliente ```git ```
 
 1.- Iniciar la consola node Js
 
@@ -28,3 +28,15 @@
 7.- Mostrar el contenido
 
 ![Screenshot](image7.png)
+
+8.- Ejecuta el archivo dessde el prompt
+
+![Screenshot](image8.png)
+
+9.- Modifica el archivo para que tenga el sigiente contenido:
+
+![Screenshot](image9.png)
+
+10.- Entra a la consola ``` $node ``` y carga el archivo ```.load uno.js ```
+
+![Screenshot](image9.png)
