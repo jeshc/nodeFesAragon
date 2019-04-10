@@ -1,4 +1,5 @@
 # Consola Node Js
+## Usar una consola Linux, si estas usando Windows, emplea la consola `7` Git Bash ´´´que proporciona la inctalación del cliente ```git ```
 
 1.- Iniciar la consola node Js
 
@@ -23,3 +24,7 @@
 6.- Salirse con ```.exit ```
 
 ![Screenshot](image6.png)
+
+7.- Mostrar el contenido
+
+![Screenshot](image7.png)
