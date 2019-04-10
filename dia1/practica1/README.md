@@ -33,7 +33,7 @@
 
 ![Screenshot](image8.png)
 
-9.- Modifica el archivo para que tenga el sigiente contenido:
+9.- Modifica el archivo para que tenga el siguiente contenido:
 
 ![Screenshot](image9.png)
 
@@ -65,5 +65,9 @@ facultad + " - " + carrera
 ```
 
 Ejecutar el archivo desde la consola.
+
+![Screenshot](image11.png)
+
+12.- Son cerrar la consola ejecutar ``` > carrera.length ```
 
 ![Screenshot](image11.png)
