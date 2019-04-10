@@ -87,3 +87,6 @@ Ejecutar el archivo desde la consola.
 
 
 #### RegExp
+
+
+Ademas de esto, todo lo demas es un objeto
