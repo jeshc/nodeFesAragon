@@ -2,4 +2,4 @@
 
 iniciar la consola node Js
 
-![Screenshot](prac1..jpg)
+![Screenshot](image1.jpg)
