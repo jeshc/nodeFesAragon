@@ -8,7 +8,7 @@
 
 ![Screenshot](image2.jpg)
 
-3.- Desplegar la ayuda con ```javascript .help ```
+3.- Desplegar la ayuda con ``` .help ```
 
 ![Screenshot](image2.jpg)
 
