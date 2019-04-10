@@ -1,5 +1,5 @@
 # Consola Node Js
-### Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ´´´ que proporciona la inctalación del cliente ```git ```
+### Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la inctalación del cliente ```git ```
 
 1.- Iniciar la consola node Js
 
@@ -29,7 +29,7 @@
 
 ![Screenshot](image7.png)
 
-8.- Ejecuta el archivo dessde el prompt
+8.- Ejecuta el archivo desde el prompt
 
 ![Screenshot](image8.png)
 
@@ -37,6 +37,33 @@
 
 ![Screenshot](image9.png)
 
-10.- Entra a la consola ``` $node ``` y carga el archivo ```.load uno.js ```
+10.- Entra a la consola ``` $node ``` y carga el archivo ``` >.load uno.js ```
 
-![Screenshot](image9.png)
+![Screenshot](image10.png)
+
+### Tipos de datos primitivos en nodejs
+
+* String -> Cadenas de caracteres
+* Number  -> Para tipos numéricos enteros y reales.
+* Boolean -> Para los valores true y false
+* Undefined -> Objeto no definido
+* Null -> Identificador para nulo
+* RegExp -> Uso de expresiones regulares sobre texto
+
+
+#### Strings
+
+11.- Uso de Strings. Captura el siguiente código en un archivo con nombre ``` strings.js ```
+```
+// se pueden declarar usando doble comilla ""
+var facultad = "FES Aragón UNAM";
+// o comillas simples ''
+var carrera = 'Ingeniería en Computación';
+// concatena cadena con el operador sobrecargado  +
+facultad + " - " + carrera
+
+```
+
+Ejecutar el archivo desde la consola.
+
+![Screenshot](image11.png)
