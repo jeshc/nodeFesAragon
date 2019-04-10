@@ -18,4 +18,4 @@
 
 5.- Cargar el archivo y ejecutarlo ``` .load [nombre archivo].js  ```
 
-![Screenshot](image5.jpg)
+![Screenshot](image5.png)
