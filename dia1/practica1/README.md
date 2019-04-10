@@ -10,7 +10,7 @@
 
 3.- Desplegar la ayuda con ``` .help ```
 
-![Screenshot](image3.jpg)
+![Screenshot](image3.png)
 
 4.- Guardar los comandos de la sesion actual con ''' .save [nombre archivo].js '''
 
