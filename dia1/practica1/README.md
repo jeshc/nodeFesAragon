@@ -19,3 +19,7 @@
 5.- Cargar el archivo y ejecutarlo ``` .load [nombre archivo].js  ```
 
 ![Screenshot](image5.png)
+
+6.- Salirse con ```.exit ```
+
+![Screenshot](image6.png)
