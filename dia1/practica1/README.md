@@ -12,10 +12,10 @@
 
 ![Screenshot](image3.png)
 
-4.- Guardar los comandos de la sesion actual con ''' .save [nombre archivo].js '''
+4.- Guardar los comandos de la sesion actual con ``` .save [nombre archivo].js ```
 
 ![Screenshot](image4.jpg)
 
-5.- Escribir clásico hola mundo
+5.- Cargar el archivo y ejecutarlo ``` .load [nombre archivo].js  ```
 
 ![Screenshot](image5.jpg)
