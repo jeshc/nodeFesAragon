@@ -17,7 +17,7 @@ function regresaNumero(){
 }
 ```
 
-Inicia RELP de node, carga el archivo y invoca los métodos.
+Inicia REPL de node, carga el archivo y invoca los métodos.
 
 ![Screenshot](image1.PNG)
 
@@ -36,10 +36,11 @@ var b= new Function ("x" , "y", "return x + y");
 var c= new Function ("x" , "y", "z", "return x + y + z");
 
 ```
+Parámetros y argumentos
 
 ![Screenshot](image2.PNG)
 
-3.- Recuerda que la declaraciones de variables son dinamicos y que las funciones son objetos, de tal forma que se le pueden asignar atributos, como en el siguiente ejemplo:
+3.- Recuerda que la declaraciones de variables son dinámicos y que las funciones son objetos, de tal forma que se le pueden asignar argumentos, como en el siguiente ejemplo:
 
 ```
 //sonObjetos.js
@@ -52,3 +53,9 @@ d.y = "Duplicando el numero";
 ```
 
 ![Screenshot](image3.PNG)
+
+4.- funcion como parámetro
+
+![Screenshot](image3.PNG)
+
+5.- callbacks
