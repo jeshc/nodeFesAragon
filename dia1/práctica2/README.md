@@ -38,3 +38,17 @@ var c= new Function ("x" , "y", "z", "return x + y + z");
 ```
 
 ![Screenshot](image2.PNG)
+
+3.- Recuerda que la declaraciones de variables son dinamicos y que las funciones son objetos, de tal forma que se le pueden asignar atributos, como en el siguiente ejemplo:
+
+```
+//sonObjetos.js
+var d= function (x){
+  console.log(x*2);
+}
+
+d.y = "Duplicando el numero";
+
+```
+
+![Screenshot](image3.PNG)
