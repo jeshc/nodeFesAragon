@@ -1,14 +1,14 @@
 # Funciones
-En node js al igual que en Javascript una funcion es una entidad que puede construirse en tiempo de ejecución, pasarse como un parámetro, devolverse desde una subrutina o asignarse a una variable, para luego ser invocada como variable. A esto se le conoce como first-class Object.
+En node js al igual que en Javascript una funcion es una objeto que puede construirse en tiempo de ejecución, pasarse como un parámetro, devolverse desde una subrutina o asignarse a una variable, para luego ser invocada como variable. A esto se le conoce como first-class Object.
 
 A continuación realizaremos ejercicios que nos muestren estas características.
 
- 1.-Primero aprendamos las 3 formas de declarar una funcion mas empleadas, la siguiente es una funcion con nombre, justo como la conocemos en otros lenguajes como C y PHP.
+ 1.-Primero aprendamos las 3 formas de declarar una función mas empleadas, la siguiente es una función con nombre, justo como la conocemos en otros lenguajes como C y PHP.
 
 ```
 //funciones.js
 function saludo(){
-  console.log();
+  console.log('Hey there');
 }
 
 function regresaNumero(){
@@ -20,3 +20,21 @@ function regresaNumero(){
 Inicia RELP de node, carga el archivo y invoca los métodos.
 
 ![Screenshot](image1.PNG)
+
+2.-funciones anónimas
+Las funciones anónimas no tienen un nombre estableido en tre la palabra reservada function y el paso de argumentos, sin embargo es necesario asignarla a una variable para establecer una referencia.
+
+
+```
+//anonimas.js
+var a= function(){
+  console.log(4+5);
+};
+
+var b= new Function ("x" , "y", "return x + y");
+
+var c= new Function ("x" , "y", "z", "return x + y + z");
+
+```
+
+![Screenshot](image2.PNG)
