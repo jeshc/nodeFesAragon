@@ -56,6 +56,6 @@ d.y = "Duplicando el numero";
 
 4.- funcion como parámetro
 
-![Screenshot](image3.PNG)
+![Screenshot](image4.PNG)
 
 5.- callbacks
