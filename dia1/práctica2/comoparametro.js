@@ -1,9 +1,8 @@
 //como parametro.js
-var duplica= function(x ){
-  console.log('Duplicando');
-  return x * 2;
+var convertNum = function (num) {
+return num + 10;
 }
-
-var llamada= function(a,suma){
-
+var processNum = function (num, fn) {
+return fn(num);
 }
+processNum(10, convertNum);
