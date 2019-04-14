@@ -58,7 +58,11 @@ d.y = "Duplicando el numero";
 ```
 
 ![Screenshot](image3.PNG)
+
 Al ser consideradas como objetos, las funciones pueden ser enviadas como parámetro en la llamada a otras funciones.
+
+## Uso de funciones cómo parámetro a otras funciones.
+[intro]
 
 4.- función como parámetro
 
