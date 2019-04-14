@@ -9,11 +9,3 @@ var duplicar = function(numero){
 var procesar = function(x, laFuncion) {
   return laFuncion(x);
 }
-procesar(10, incrementa);
-
-procesar(procesar(10,incrementa),incrementa);
-
-procesar(procesar(10,duplicar),incrementa);
-
-
-//procesar(procesar(procesar(10,incrementa),incrementa),duplicar);

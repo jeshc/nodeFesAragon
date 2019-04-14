@@ -70,6 +70,13 @@ Al ser consideradas como objetos, las funciones pueden ser enviadas como paráme
 
 5.-
 
+![Screenshot](image5.PNG)
+
+![Screenshot](image6.PNG)
+
+![Screenshot](image7.PNG)
+
+![Screenshot](image8.PNG)
 
 
 
