@@ -82,3 +82,4 @@ Al ser consideradas como objetos, las funciones pueden ser enviadas como paráme
 
 
 x.- callbacks
+Llamadas sincronas o asíncronas, ese es el dilema. Node js
