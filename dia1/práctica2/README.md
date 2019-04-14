@@ -68,4 +68,10 @@ Al ser consideradas como objetos, las funciones pueden ser enviadas como paráme
 
 ![Screenshot](image4.PNG)
 
-5.- callbacks
+5.-
+
+
+
+
+
+x.- callbacks
