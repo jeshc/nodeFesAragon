@@ -7,9 +7,13 @@ Sigue los pasos que aquí se prepararon y lee los conceptos que se exponen.
 #####  Cualquier mejora a este repositorio favor de contribuir, haciendo fork y enviando tus pull request #####
 
 ### Práctica 1 ###
+
 - Introducción a NodeJS
 - Consola NodeJS
 - Tipos de datos JS
+
+### Práctica 2 ###
+
 - Funciones
   - funciones con nombre
   - funciones anónimas
