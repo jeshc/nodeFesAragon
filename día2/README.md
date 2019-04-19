@@ -14,7 +14,7 @@ y permite a losdesarrolladores tener a su disposición una gran cantidad de mód
 - Usar el repositorio de paquetes npmjs.com
 - Manejo de paquetes
 - npm init y package.json
-- Manejo de dependencias  y npm install
+- Manejo de dependencias  y npm install sin argumentos
 
 
 var http = require("http");

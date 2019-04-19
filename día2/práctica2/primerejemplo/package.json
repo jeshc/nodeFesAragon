@@ -1,0 +1,14 @@
+{
+  "name": "mi-proyecto",
+  "version": "0.0.1",
+  "description": "Un proyecto de ejemplo el cual escribe letras de colores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeshc",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "2.4.2"
+  }
+}
