@@ -84,6 +84,7 @@ Al ser consideradas como objetos, las funciones pueden ser enviadas como argumen
 [intro]
 
 4.- Cómo se puede observar en el siguiente código, se pueden definir funciones como parámetro. La función procesa está definiendo dos parámetros, **x** y **laFuncion**.
+
 ```
 var incrementa = function(numero) {
   return numero + 1;
@@ -97,9 +98,13 @@ La función incrementa es pasada cómo argumento a la función procesa.
 
 ![Screenshot](image4.PNG)
 
-Cómo se puede observar una función incrementa recibe una variable numérica la cual incrementará en 1.
+Cómo se puede observar una función ```incrementa``` recibe una variable numérica la cual incrementará en 1.
 
-La función procesar por otro lado recibe como parámetro
+La función ``` procesar ``` por otro lado recibe como parámetros: una variable numérica *x* y una variable que referenciará a una función(**laFuncion**).
+
+por último en el código ```procesar(10,incrementa); ``` se mandan los argumentos 10 y la función previamente definida ```incrementa ```
+
+
 ```
 //como parametro.js
 var incrementa = function(numero) {
@@ -114,30 +119,101 @@ procesar(10, incrementa);
 
 ```
 
-5.-
+5. Carga al RELP el archivo comoParam2.js, el cual es una modificación al ejemplo anterior, se agragó la función ```duplicar ```.
+Una vez cargado, manda a llamr las funciones mandando los argumentos que se observan en la imagen.
 
 ![Screenshot](image5.PNG)
 
+El siguiente código, corresponde a un ejemplo igual pero que define más parámetros.
+
+```
+//comoParam3.js
+var suma = function (x , y) {
+return x + y;
+}
+var calculadora = function (x , y, funcion) {
+return funcion(x,y);
+}
+```
+
+6. Carga al RELP el archivo comoParam3.js y realiza las llamadas que se observan en la imagen.
+
 ![Screenshot](image6.PNG)
 
+7.- Carga al RELP el archivo comoParam4.js y realiza las llamadas a la función calculadora y envía como argumento las funciones suma o resta.
+
 ![Screenshot](image7.PNG)
+
+### Funciones totalmente anónimas ###
+
+Ahora, al código anterior se modificó para recibir funciones totalmente anónimas como argumento.
+
+```
+//comoParam5.js
+var calculadora = function (x , y, funcion) {
+return funcion(x,y);
+}
+
+//suma
+calculadora(10,20,function (x,y) {
+  return x+y;
+});
+
+//resta
+calculadora(10,20,function (x,y) {
+  return x-y;
+});
+
+```
+
+8. Pruebala en el RELP.
 
 ![Screenshot](image8.PNG)
 
 
+### Otra notación para funciones anónimas como argumento ###
+Esta notación es conocida como funciones flecha (Arrow functions) introducido en ECMAScript 6, es una de las características más sobresalientes de esta versión y estan basadas en la notación lambda de varios lenguajes de programación. El objetivo es tener una sintaxis más simple y concisa.
+
+Para más información recomiendo la siguiente lectura:
+
+  https://zendev.com/2018/10/01/javascript-arrow-functions-how-why-when.html
 
 
+En el siguiente código se expone dicha notación.
+```
+//comoParam6.js
+var calculadora = function (x , y, funcion) {
+return funcion(x,y);
+}
+
+//suma
+calculadora(10,20, (x,y) => {
+  return x+y;
+});
+
+//resta
+calculadora(10,20, (x,y) => {
+  return x-y;
+});
+
+```
+9. Carga el archivo comoParam6.js al REPL y comprueba.
+
+![Screenshot](image9.PNG  )
 
 
-x.- callbacks
-Llamadas sincronas o asíncronas, ese es el dilema. Node js
+#### Otro ejemplo con un timer de 5 segundos ####  
 
-
-
-6.- timeout y Funciones
-
+10. carga el archivo timeOut.js y prueba el funcionamiento.
 ```
 setTimeout(() => {
     console.log('hola');
 }, 5000);
 ```
+
+Resultado:
+
+![Screenshot](image10.PNG)
+
+# NOTA #
+Repasa muy bien estos ejemplos, ya que se emplean ampliamente a continuación.

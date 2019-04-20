@@ -1,4 +1,4 @@
-//como parametro.js
+//comoParam4.js
 var suma = function (x , y) {
 return x + y;
 }

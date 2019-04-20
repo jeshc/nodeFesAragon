@@ -1,4 +1,4 @@
-//como parametro.js
+//comoParam2.js
 var incrementa = function(numero) {
   return numero + 1;
 }
