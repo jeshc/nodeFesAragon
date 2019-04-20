@@ -1,16 +1,15 @@
 {
-  "name": "mi-proyecto",
-  "version": "0.0.1",
-  "description": "Un proyecto de ejemplo el cual escribe letras de colores",
+  "name": "ejemplo2",
+  "version": "1.0.0",
+  "description": "ejemplo 2 para la clase",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "env FORCE_COLOR=1 node index.js"
   },
-  "author": "jeshc",
+  "author": "jesh",
   "license": "MIT",
   "dependencies": {
-    "chalk": "2.3.x",
-    "asciify": "1.3.5"
+    "chalk-animation": "1.6.0"
   }
 }

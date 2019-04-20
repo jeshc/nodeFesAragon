@@ -19,3 +19,7 @@ Sigue los pasos que aquí se prepararon y lee los conceptos que se exponen.
   - funciones anónimas
   - funciones como objetos
   - funciones como parametro a otras funciones.
+
+### Práctica 3 ###
+
+### Práctica 4 ###

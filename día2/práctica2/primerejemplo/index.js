@@ -1,19 +1,9 @@
-var gis = require('chalk');
-
-var texto = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-
-var j = 0;
-
-
-for (j = 0; j < texto.length; j++) {
-  //console.log(texto.charAt(j));
-  pinta(texto.charAt(j), j % 16);
-}
-
-console.log();
+const gis = require('chalk');
+var asciify= require('asciify');
 
 
 function pinta(letra, index) {
+  gis.enabled=true;
   switch (index) {
     case 0:
       process.stdout.write(gis.black.bgBlackBright(letra));
@@ -67,3 +57,23 @@ function pinta(letra, index) {
       process.stdout.write(gis.red(letra));
   }
 }
+
+function main() {
+
+  var texto = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+
+  var j = 0;
+
+  for (j = 0; j < texto.length; j++) {
+    //console.log(texto.charAt(j));
+    pinta(texto.charAt(j), j % 16);
+  }
+  console.log();
+
+}
+
+main();
+
+asciify('IS_ ICO!', function (err, result) {
+	console.log('\nFES Aragón, UNAM!\n' + result);
+});
