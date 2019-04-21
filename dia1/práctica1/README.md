@@ -76,23 +76,61 @@ Ejecutar el archivo desde la consola.
 
 ![Screenshot](image11.png)
 
-12.- Son cerrar la consola ejecutar ``` > carrera.length ```
+12.- Sin cerrar la consola ejecutar ``` > carrera.length ```
 
 ![Screenshot](image12.png)
 
-#### Number
+#### Number ####
+var edad=19;
 
 
-#### Boolean
+#### Boolean ####
+var flag=true;
+flag= false;
+if(flag){
+  // Haz algo
+}
+
+#### Undefined ####
+Cuando un identificador no ha sido asignado a un valor o cuando una expresión no regresa un valor.
+
+```
+var edad;
+console.log(edad);
+```
+
+#### Null ####
+POr otra parte null debe ser asignada a una variable para representar de forma explicita la ausencia de valor o una referencia inexistente(objetos).
+```
+var nombre=null;
+console.log(edad);
+```
+
+#### RegExp ####
+Expresiones regulares
+Las expresiones regulares se usan para la búsqueda de coincidencias en una cadena de texto por medio de un patrón.
+Una expresión regular debe ser definida entre dos diagonales
+```
+var str = "Esto es un texto muy largo?";
+  var patron = /[t]/g;
+  var resultado = str.match(patron);
+  console.log(resultado);
 
 
-#### Undefined
+var t=str.replace(/to/g,"TA");
+console.log(t);
+console.log(str);
+
+```   
 
 
-#### Null
+![Screenshot](image13.PNG)
+
+## Arreglos ##
 
 
-#### RegExp
 
+## Notación JSON ##
+JSON es el acrónimo de JavaScript Object Notation, Notación de objetos JavaScript. Es un lenguaje de datos independiente del lenguaje de programación.
 
-Ademas de esto, todo lo demas es un objeto
+![alt text](https://www.json.org/object.gif "https://www.json.org")
