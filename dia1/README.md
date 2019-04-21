@@ -11,15 +11,18 @@ Sigue los pasos que aquí se prepararon y lee los conceptos que se exponen.
 - Introducción a NodeJS
 - Consola NodeJS
 - Tipos de datos JS
+- Arreglos
+- JSON
 
 ### Práctica 2 ###
 
 - Funciones
-  - funciones con nombre
-  - funciones anónimas
-  - funciones como objetos
-  - funciones como parametro a otras funciones.
+  - Funciones con nombre
+  - Funciones anónimas
+  - Funciones como objetos
+  - Funciones como argumento a otras funciones.
+  - Funciones flecha.
 
 ### Práctica 3 ###
-
-### Práctica 4 ###
+  - Funciones asíncronas
+  - Callbacks
