@@ -59,7 +59,7 @@ the fly. *
 * RegExp -> Uso de expresiones regulares sobre texto
 
 
-#### Strings
+#### Strings ####
 
 11.- Uso de Strings. Captura el siguiente código en un archivo con nombre ``` strings.js ```
 ```
@@ -107,6 +107,7 @@ console.log(edad);
 ```
 
 #### RegExp ####
+
 Expresiones regulares
 Las expresiones regulares se usan para la búsqueda de coincidencias en una cadena de texto por medio de un patrón.
 Una expresión regular debe ser definida entre dos diagonales
