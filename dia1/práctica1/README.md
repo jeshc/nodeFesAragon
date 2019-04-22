@@ -217,7 +217,7 @@ frutas.concat(otrasFrutas);
 ## Notación JSON ##
 JSON es el acrónimo de JavaScript Object Notation, Notación de objetos JavaScript. Es un lenguaje de datos independiente del lenguaje de programación.
 
-JSON es una colección de pares llave valor, los cuales pueden ser anidados.
+JSON es una colección de pares llave-valor, los cuales pueden ser anidados.
 
 En la siguiente imagen (fuente json.org) resume la notación JSON, una llave que es de tipo string y un valor. Donde el valor puede ser otro objeto JSON.
 
@@ -243,8 +243,86 @@ console.log(obj);
 ```
 ![Screenshot](image14.PNG)
 
-Evitar los caracteres especiales en las llaves:
+Los nombres de las llaves deben ir entre comillas dobles en la declaración.
+El valor puede obtener alguno de los siguientes casos:
+
+1. Un String.
+2. Un Number
+3. Un Objeto (puede ser otro JSON)
+4. Un arreglo
+5. Un valor Boolean
+6. Null
+
+Un ejemplo:
 
 ```
+//cliente.js
+var cliente={
+  "numCliente": 1234,
+  "nombre":{
+            "primerNombre":"Mario",
+            "segundoNombre":null,
+            "apellidoPaterno":"Pérez",
+            "apellidoMaterno":"García"
+          },
+  "telefonos":["04455-2345-2344","55-3987-3432","(721)33221212"],
+  "dirección":{
+                "calle":"Bosques de Africa",
+                "numeroExt":"23-B",
+                "colonia":"Bosques de Aragón",
+                "cp":57127
+              },
+   "activo":true,
+   "balance":231521.89,
+   "prestamos":null
+}
+```
+
+![Screenshot](image19.PNG)
+
+http://www.ecma-international.org/ecma-262/9.0/index.html#sec-json-object
+
+
+
+
+24.5.2JSON.stringify ( value [ , replacer [ , space ] ] )
+The stringify function returns a String in UTF-16 encoded JSON format representing an ECMAScript value. It can take three parameters. The value parameter is an ECMAScript value, which is usually an object or array, although it can also be a String, Boolean, Number or null. The optional replacer parameter is either a function that alters the way objects and arrays are stringified, or an array of Strings and Numbers that acts as an inclusion list for selecting the object properties that will be stringified. The optional space parameter is a String or Number that allows the result to have white space injected into it to improve human readability.
+
+![Screenshot](image20.PNG)
+
+24.5.1JSON.parse ( text [ , reviver ] )
+The parse function parses a JSON text (a JSON-formatted String) and produces an ECMAScript value. The JSON format represents literals, arrays, and objects with a syntax similar to the syntax for ECMAScript literals, Array Initializers, and Object Initializers. After parsing, JSON objects are realized as ECMAScript objects. JSON arrays are realized as ECMAScript Array instances. JSON strings, numbers, booleans, and null are realized as ECMAScript Strings, Numbers, Booleans, and null.
+
+![Screenshot](image21.PNG)
+
+Objetos JSON con funciones
+
 
 ```
+//cliente2.js
+var cliente={
+  "numCliente": 1234,
+  "nombre":{
+            "primerNombre":"Mario",
+            "segundoNombre":null,
+            "apellidoPaterno":"Pérez",
+            "apellidoMaterno":"García"
+          },
+  "telefonos":["04455-2345-2344","55-3987-3432","(721)33221212"],
+  "dirección":{
+                "calle":"Bosques de Africa",
+                "numeroExt":"23-B",
+                "colonia":"Bosques de Aragón",
+                "cp":57127
+              },
+   "activo":true,
+   "balance":231521.89,
+   "prestamos":null,
+   "retiro":function (val) {
+     this.balance-=val;
+     console.log(this.balance);
+   }
+}
+```
+
+![Screenshot](image22.PNG)
