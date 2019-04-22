@@ -105,6 +105,7 @@ console.log(edad);
 #### Null
 
 POr otra parte null debe ser asignada a una variable para representar de forma explicita la ausencia de valor o una referencia inexistente(objetos).
+
 ```
 var nombre=null;
 console.log(edad);
@@ -219,7 +220,7 @@ frutas.concat(otrasFrutas);
 
  *continua...*
 
-## Notación JSON 
+## Notación JSON
 JSON es el acrónimo de JavaScript Object Notation, Notación de objetos JavaScript. Es un lenguaje de datos independiente del lenguaje de programación.
 
 JSON es una colección de pares llave-valor, los cuales pueden ser anidados.
