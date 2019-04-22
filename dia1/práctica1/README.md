@@ -111,7 +111,7 @@ var nombre=null;
 console.log(edad);
 ```
 
-#### RegExp
+##### RegExp
 
 Expresiones regulares
 Las expresiones regulares se usan para la búsqueda de coincidencias en una cadena de texto por medio de un patrón.
