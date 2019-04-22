@@ -1,15 +1,15 @@
 # Consola Node Js
 ### Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la inctalación del cliente ```git ```
-Accedemos al ambiente virtual RELP(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecucción de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El codigo ejecutado en el RELP se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ``` .
+Accedemos al ambiente virtual REPL(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecucción de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El codigo ejecutado en el REPL se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ``` .
 
-
-supports a simplified Emacs style of line editing and a
+```
+*supports a simplified Emacs style of line editing and a
 small set of basic commands. Whatever you type into REPL is processed no differently
 than if you had typed the JavaScript into a file and run the file using Node. You can
 actually use REPL to code your entire application—literally testing the application on
-the fly.
-
-1.- Iniciar la consola RELP de node Js
+the fly. *
+```
+1.- Iniciar la consola REPL de node Js
 
 ![Screenshot](image1.jpeg)
 
