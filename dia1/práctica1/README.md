@@ -81,10 +81,12 @@ Ejecutar el archivo desde la consola.
 ![Screenshot](image12.png)
 
 #### Number ####
+
 var edad=19;
 
 
 #### Boolean ####
+
 var flag=true;
 flag= false;
 if(flag){
@@ -92,6 +94,7 @@ if(flag){
 }
 
 #### Undefined ####
+
 Cuando un identificador no ha sido asignado a un valor o cuando una expresión no regresa un valor.
 
 ```
@@ -100,6 +103,7 @@ console.log(edad);
 ```
 
 #### Null ####
+
 POr otra parte null debe ser asignada a una variable para representar de forma explicita la ausencia de valor o una referencia inexistente(objetos).
 ```
 var nombre=null;
