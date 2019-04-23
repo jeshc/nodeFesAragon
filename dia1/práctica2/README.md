@@ -1,5 +1,5 @@
 # Funciones
-En node js al igual que en Javascript una función es una objeto que puede construirse en tiempo de ejecución, pasarse como un parámetro, devolverse desde una subrutina o asignarse a una variable, para luego ser invocada como variable. A esto se le conoce como first-class Object.
+En node js al igual que en Javascript **una función es un objeto** que puede construirse en tiempo de ejecución, pasarse como un parámetro, devolverse desde una subrutina o asignarse a una variable, para luego ser invocada como variable. A esto se le conoce como first-class Object.
 
 A continuación realizaremos ejercicios que nos muestren estas características.
 ### Declaración de funciones con nombre.
@@ -18,7 +18,7 @@ function regresaNumero(){
 }
 ```
 
-Inicia REPL de node, carga el archivo y invoca los métodos.
+Inicia REPL de node, carga el archivo e invoca los métodos.
 
 ![Screenshot](image1.PNG)
 
@@ -43,7 +43,7 @@ Su ejecución en el RELP sería así:
 
 ![Screenshot](image2.PNG)
 
-#### Parámetros y argumentos ####
+#### Parámetros y argumentos
 Antes de continuar tenemos que establecer un par de definiciones relacionadas a las funciones, esto es: la diferencia y/o relación entre parámetros y argumentos.
 
 Un parámetro es la variable o función declarada para recibir valores o referencias y por otro lado los argumentos son las literales que reciben los parámetros como valores o implementación de funciones para su ejecución.
@@ -80,8 +80,10 @@ d.y = "Duplicando el numero";
 
 Al ser consideradas como objetos, las funciones pueden ser enviadas como argumento en la llamada a otras funciones.
 
-## Uso de funciones cómo **argumentos ** a otras funciones. ##
-[intro]
+## Uso de funciones cómo argumentos  a otras funciones.
+Una de las características mas relevante de javascript es el paso de funciones como argumento, además esta característica forma parte de la ejecución asíncrona de nodejs, como se verá mas adelante.
+
+
 
 4.- Cómo se puede observar en el siguiente código, se pueden definir funciones como parámetro. La función procesa está definiendo dos parámetros, **x** y **laFuncion**.
 
