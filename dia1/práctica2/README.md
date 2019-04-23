@@ -39,7 +39,7 @@ var b= new Function ("x" , "y", "return x + y");
 var c= new Function ("x" , "y", "z", "return x + y + z");
 
 ```
-Su ejecución en el RELP sería así:
+Su ejecución en el REPL sería así:
 
 ![Screenshot](image2.PNG)
 
@@ -121,7 +121,7 @@ procesar(10, incrementa);
 
 ```
 
-5. Carga al RELP el archivo comoParam2.js, el cual es una modificación al ejemplo anterior, se agragó la función ```duplicar ```.
+5. Carga al REPL el archivo comoParam2.js, el cual es una modificación al ejemplo anterior, se agragó la función ```duplicar ```.
 Una vez cargado, manda a llamr las funciones mandando los argumentos que se observan en la imagen.
 
 ![Screenshot](image5.PNG)
@@ -138,11 +138,11 @@ return funcion(x,y);
 }
 ```
 
-6. Carga al RELP el archivo comoParam3.js y realiza las llamadas que se observan en la imagen.
+6. Carga al REPL el archivo comoParam3.js y realiza las llamadas que se observan en la imagen.
 
 ![Screenshot](image6.PNG)
 
-7.- Carga al RELP el archivo comoParam4.js y realiza las llamadas a la función calculadora y envía como argumento las funciones suma o resta.
+7.- Carga al REPL el archivo comoParam4.js y realiza las llamadas a la función calculadora y envía como argumento las funciones suma o resta.
 
 ![Screenshot](image7.PNG)
 
@@ -168,7 +168,7 @@ calculadora(10,20,function (x,y) {
 
 ```
 
-8. Pruebala en el RELP.
+8. Pruebala en el REPL.
 
 ![Screenshot](image8.PNG)
 

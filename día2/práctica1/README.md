@@ -86,7 +86,7 @@ En la página: https://www.npmjs.com/ puedes consultar los paquetes disponibles,
 
 Cuando en un programa nodejs se invoca a la función require, se inicia un proceso de búsqueda en el directorio node_modules. En primera instancia busca en la carpeta del proyecto y en última instancia en la carpeta de instalación de node.
 
-Para desplegar el orden de búsqueda de los  paquetes, introduce el código: ``` module.paths ``` en el entorno RELP de node. El cuál es un arreglo que contiene las rutas absolutas de búsqueda de los paquetes.
+Para desplegar el orden de búsqueda de los  paquetes, introduce el código: ``` module.paths ``` en el entorno REPL de node. El cuál es un arreglo que contiene las rutas absolutas de búsqueda de los paquetes.
 
 ![Screenshot](image8.PNG)
 
