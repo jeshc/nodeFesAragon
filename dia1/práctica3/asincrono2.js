@@ -1,8 +1,9 @@
+//asincrono2.js
 var fs = require('fs');
 const chalk = require('chalk');
- 
+
 console.log('Iniciando');
-fs.readFile('loremLigero.txt', 'utf8', function(err, contents) {
+fs.readFile('loremLigerow.txt', 'utf8', function(err, contents) {
   if (err) {
     console.log(chalk.red("error"));
   } else {
