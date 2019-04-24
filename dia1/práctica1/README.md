@@ -1,14 +1,9 @@
 # Consola Node Js
-Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la inctalación del cliente ```git ```
-Accedemos al ambiente virtual REPL(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecucción de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El codigo ejecutado en el REPL se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ``` .
+Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la instalación del cliente ```git ```. Accedemos al ambiente virtual REPL(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecución de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El codigo ejecutado en el REPL se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ```
 
-```
-supports a simplified Emacs style of line editing and a
-small set of basic commands. Whatever you type into REPL is processed no differently
-than if you had typed the JavaScript into a file and run the file using Node. You can
-actually use REPL to code your entire application—literally testing the application on
-the fly.
-```
+```Admite un estilo simplificado de Emacs de edición de lineas y un pequeño conjunto de comandos básicos. Lo que escriba en REPL no se procesa de manera diferentemente como si hubieras escrito en JavaScript en un archivo y ejecutar el archivo utilizando Node. Puedes actualmente usar REPL para codificar tu aplicación entera literalmente probando la aplicación en el transcurso. ```
+<br>
+
 1.- Iniciar la consola REPL de node Js
 
 ![Screenshot](image1.jpeg)
@@ -49,19 +44,20 @@ the fly.
 
 ![Screenshot](image10.png)
 
-### Tipos de datos primitivos en nodejs
+### Tipos de datos primitivos en node.js
 
-* String -> Cadenas de caracteres
+* String -> Cadenas de caracteres.
 * Number  -> Para tipos numéricos enteros y reales.
-* Boolean -> Para los valores true y false
-* Undefined -> Objeto no definido
-* Null -> Identificador para nulo
-* RegExp -> Uso de expresiones regulares sobre texto
+* Boolean -> Para los valores true y false.
+* Undefined -> Objeto no definido.
+* Null -> Identificador para nulo.
+* RegExp -> Uso de expresiones regulares sobre texto.
 
 
 #### Strings
 
-11.- Uso de Strings. Captura el siguiente código en un archivo con nombre ``` strings.js ```
+11.- Uso de Strings.
+Captura el siguiente código en un archivo con nombre ``` strings.js ```
 ```
 // se pueden declarar usando doble comilla ""
 var facultad = "FES Aragón UNAM";
@@ -104,18 +100,19 @@ console.log(edad);
 
 #### Null
 
-POr otra parte null debe ser asignada a una variable para representar de forma explicita la ausencia de valor o una referencia inexistente(objetos).
+Por otra parte null debe ser asignada a una variable para representar de forma explicita la ausencia de valor o una referencia inexistente(objetos).
 
 ```
 var nombre=null;
 console.log(edad);
 ```
 
-##### RegExp
+#### RegExp
 
-Expresiones regulares
+Expresiones regulares.
+<br>
 Las expresiones regulares se usan para la búsqueda de coincidencias en una cadena de texto por medio de un patrón.
-Una expresión regular debe ser definida entre dos diagonales
+Una expresión regular debe ser definida entre dos diagonales.
 ```
 var str = "Esto es un texto muy largo?";
   var patron = /[t]/g;
@@ -173,10 +170,10 @@ console.log(databases[0][1]);
 
 
 
-#### Métodos mas usados de los arreglos
+#### Métodos más usados de los arreglos
 
 
-** forEach ** .-el método ```forEach ``` es un método que permite iterar sobre el arreglo.
+**forEach** .-El método ```forEach ``` es un método que permite iterar sobre el arreglo.
 
 ```
 //frutas3.js
@@ -191,7 +188,7 @@ frutas.forEach(function(valor){
  console.log(valor);
 });
 ```
-** concat ** .- Concatenar cadenas.
+**concat** .- Concatenar cadenas.
 ```
 //frutas4.js  
 var frutas=["Manzana","Pera","Melón","Fresa"];
@@ -202,17 +199,17 @@ frutas.concat(otrasFrutas);
 
  ![Screenshot](image15.PNG)
 
-** includes ** .- Verificar si un elemento está detro del arreglo.
+**includes** .- Verifica si un elemento está detro del arreglo.
 
  ![Screenshot](image16.PNG)
 
 
- ** indexOf ** .- Regresa el índice de un elemento
+ **indexOf** .- Regresa el índice de un elemento
 
 ![Screenshot](image17.PNG)
 
 
- ** sclice(starts, ends) ** .- regresa un segmento del arreglo, incluye el inicio pero no el elemento end
+ **slice(starts, ends)** .- Regresa un segmento del arreglo, incluye el inicio pero no el elemento end.
 
 
 
@@ -253,11 +250,11 @@ Los nombres de las llaves deben ir entre comillas dobles en la declaración.
 El valor puede obtener alguno de los siguientes casos:
 
 1. Un String.
-2. Un Number
-3. Un Objeto (puede ser otro JSON)
-4. Un arreglo
-5. Un valor Boolean
-6. Null
+2. Un Number.
+3. Un Objeto (puede ser otro JSON).
+4. Un arreglo.
+5. Un valor Boolean.
+6. Null.
 
 Un ejemplo:
 
@@ -286,18 +283,17 @@ var cliente={
 
 ![Screenshot](image19.PNG)
 
-http://www.ecma-international.org/ecma-262/9.0/index.html#sec-json-object
+Los siguientes dos conceptos "JSON.stringify" y "JSON.parse" fueron obtenidos del siguiente recurso web: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-json-object
 
-
-
-
-24.5.2JSON.stringify ( value [ , replacer [ , space ] ] )
-The stringify function returns a String in UTF-16 encoded JSON format representing an ECMAScript value. It can take three parameters. The value parameter is an ECMAScript value, which is usually an object or array, although it can also be a String, Boolean, Number or null. The optional replacer parameter is either a function that alters the way objects and arrays are stringified, or an array of Strings and Numbers that acts as an inclusion list for selecting the object properties that will be stringified. The optional space parameter is a String or Number that allows the result to have white space injected into it to improve human readability.
+24.5.2 JSON.stringify ( value [ , replacer [ , space ] ] )
+<br>
+La función stringify devuelve un String en formato JSON codificado en UTF-16 representando un valor ECMAScript. Puede tomar tres parámetros. El valor de parámetro es un valor ECMAScript, suele ser un objeto o arreglo, sin embargo puede ser un String, Boolean, Number o null. El parámetro de remplazo opcional es una función que altera la forma en que los objetos y arreglos se forman en cadenas, o un arreglo de Strings y Números que actúa como una lista de inclusión para seleccionar las propiedades del objeto que se va clasificar. El parámetro opcional es un String o Número que permite al resultado tener un espacio en blanco inyectado en el para mejorar la legibilidad humana.
 
 ![Screenshot](image20.PNG)
 
-24.5.1JSON.parse ( text [ , reviver ] )
-The parse function parses a JSON text (a JSON-formatted String) and produces an ECMAScript value. The JSON format represents literals, arrays, and objects with a syntax similar to the syntax for ECMAScript literals, Array Initializers, and Object Initializers. After parsing, JSON objects are realized as ECMAScript objects. JSON arrays are realized as ECMAScript Array instances. JSON strings, numbers, booleans, and null are realized as ECMAScript Strings, Numbers, Booleans, and null.
+24.5.1 JSON.parse ( text [ , reviver ] )
+<br>
+La función de análisis analiza un texto JSON (Un String en formato JSON) y produce un un valor ECMAScript. El formato JSON representa literales, arreglos, y objetos con una sintaxis similara a la sintaxis de los literales ECMAScript, inicializadores de arreglos, y inicializadores de objetos. Después de analizar, los objetos JSON se realizan como objetos ECMAScript. Los arreglos JSON se realizan como instancias de arreglo ECMAScript. Las cadenas JSON, números, booleans, y null se realizan como cadenas, números, booleans, y null ECMAScript.   
 
 ![Screenshot](image21.PNG)
 
