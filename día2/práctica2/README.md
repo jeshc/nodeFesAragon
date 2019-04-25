@@ -118,23 +118,24 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
   - El archivo principal debe ser index.js (por defecto).
   - Verifica que el archivo ```package.json```sea equivalente a .
 
-    ```
-{
-  "name": "ejemplo2",
-  "version": "1.0.0",
-  "description": "ejemplo 2 para la clase",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "env FORCE_COLOR=1 node index.js"
-  },
-  "author": "jesh",
-  "license": "MIT",
-  "dependencies": {
-    "chalk-animation": "1.6.0"
-  }
-}
-  ```
+      ```
+        {
+          "name": "ejemplo2",
+          "version": "1.0.0",
+          "description": "ejemplo 2 para la clase",
+          "main": "index.js",
+          "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "start": "env FORCE_COLOR=1 node index.js"
+          },
+          "author": "jesh",
+          "license": "MIT",
+          "dependencies": {
+            "chalk-animation": "1.6.0"
+          }
+        }
+      ```
+
   - El código para ``` index.js ``` es:
 
     ```
@@ -148,6 +149,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
   - Ejecuta ``` npm install ``` y ``` npm start ```
 
 # paquete request
+
 El paquete request de Node.js es un cliente HTTP simple.
 
 La siguiente imagen muestra la información básica del paquete en la página de npmjs.com.
@@ -162,7 +164,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
     - Agrega el script ``` "start": "node index.js" ```
     - Crea el archivo index.js y copia el siguiente código:
       ```
-      // index.js -> código original de la página oficial de reuqes en npmjs.com
+      // index.js -> código original de la página oficial de request en npmjs.com
       var request = require('request');
       request('http://www.google.com', function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
@@ -183,4 +185,3 @@ La siguiente imagen muestra la información básica del paquete en la página de
     - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
     https://pokeapi.co/api/v2/pokemon/pikachu/
     - muestra las habilidades de pikachu.
-    
