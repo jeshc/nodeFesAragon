@@ -1,4 +1,4 @@
-### el archivo package.json ###
+### el archivo package.json
 
 Todo proyecto node debe contar con un archivo especial con notación json que lo describa. Entre la información que debe contener este archivo esta:
 
@@ -52,12 +52,14 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
   ![Screenshot](image3.PNG)
 
 4. una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
+
 ```
 "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
   "start":"env FORCE_COLOR=1 node index.js"
 }
 ```
+
 y producirá el siguiente resultado:
 
   ![Screenshot](image4.PNG)
@@ -90,24 +92,27 @@ prestart, start, poststart: Run by the npm start command.
 prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 ```
-#### Ejercicio: ####
+#### Ejercicio:
 - Agregar la dependencia ``` "asciify":"asciify" ```
 - Instala las dependencias
 - Importar la biblioteca con ``` require ... ``` el código fuente del proyecto.
 - Codifica lo siguiente al final del mismo:
+
 ```
 asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 	console.log('\nFES Aragón, UNAM!\n' + result);
 });
 ```
+
 - Ejecuta el proyecto nuevamente.
 
   ![Screenshot](image5.PNG)
 
 
-### npm init ###
+### npm init
 
-``` npm init  ``` es el comando para inicializar un proyecto, por medio de un asistente en la consola shell.
+
+ Es el comando para inicializar un proyecto, por medio de un asistente en la consola shell.
 
 6. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```
 
@@ -174,7 +179,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
           console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
           console.log('body:', body); // Print the HTML for the Google homepage.
         });
-        
+
       ```
 
     - Ejecuta el proyecto con npm start .
