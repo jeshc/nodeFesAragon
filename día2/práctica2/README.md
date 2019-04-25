@@ -145,8 +145,10 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
     setTimeout(() => {
         console.log('fin');
     }, 5000);
+
     ```
-  - Ejecuta ``` npm install ``` y ``` npm start ```
+
+  - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de de colores
 
 # paquete request
 
