@@ -146,3 +146,41 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
     }, 5000);
     ```
   - Ejecuta ``` npm install ``` y ``` npm start ```
+
+# paquete request
+El paquete request de Node.js es un cliente HTTP simple.
+
+La siguiente imagen muestra la información básica del paquete en la página de npmjs.com.
+
+
+  ![Screenshot](image6.PNG)
+
+  1. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
+    - Crear la carpeta *ejemplo1*.
+    - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
+    - Agrega la dependencia ``` request ```
+    - Agrega el script ``` "start": "node index.js" ```
+    - Crea el archivo index.js y copia el siguiente código:
+      ```
+      // index.js -> código original de la página oficial de reuqes en npmjs.com
+      var request = require('request');
+      request('http://www.google.com', function (error, response, body) {
+        console.log('error:', error); // Print the error if one occurred
+        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+        console.log('body:', body); // Print the HTML for the Google homepage.
+      });
+      ```
+    - Ejecuta el proyecto con ``` npm start ```
+
+    - Resultado esperado:
+
+      ![Screenshot](image7.PNG)
+
+    - Modifica el código para solicitar información del API REST de ejemplo: *http://aragonapi.herokuapp.com/api/users/1*
+    - Resultado esperado:
+
+      ![Screenshot](image8.PNG)
+    - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
+    https://pokeapi.co/api/v2/pokemon/pikachu/
+    - muestra las habilidades de pikachu.
+    

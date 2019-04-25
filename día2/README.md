@@ -19,8 +19,3 @@ y permite a los desarrolladores tener a su disposición una gran cantidad de mó
 ## Práctica 2
 - npm init y package.json
 - Manejo de dependencias  y npm install sin argumentos
-
-
-var http = require("http");
-var url = require("url");
-fs
