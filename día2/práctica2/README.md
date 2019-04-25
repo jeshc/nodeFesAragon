@@ -165,7 +165,8 @@ La siguiente imagen muestra la información básica del paquete en la página de
   ![Screenshot](image6.PNG)
 
   7. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
-    - Crear la carpeta *ejemplo1*.
+
+    - Crear la carpeta *miRequest*.
     - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
     - Agrega la dependencia ``` request ```
     - Agrega el script ``` "start": "node index.js" ```
