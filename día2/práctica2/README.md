@@ -176,7 +176,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
         });
       ```
 
-    - Ejecuta el proyecto con ``` npm start ```
+    - Ejecuta el proyecto con ```npm start``` .
 
     - Resultado esperado:
 
@@ -186,7 +186,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
     - Resultado esperado:
 
       ![Screenshot](image8.PNG)
-      
+
     - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
     https://pokeapi.co/api/v2/pokemon/pikachu/
     - muestra las habilidades de pikachu.
