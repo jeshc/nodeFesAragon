@@ -1,6 +1,8 @@
 # Funciones
 En node js al igual que en Javascript **una función es un objeto** que puede construirse en tiempo de ejecución, pasarse como un parámetro, devolverse desde una subrutina o asignarse a una variable, para luego ser invocada como variable. A esto se le conoce como first-class Object.
 
+http://wiki.c2.com/?FirstClass
+
 A continuación realizaremos ejercicios que nos muestren estas características.
 ### Declaración de funciones con nombre.
 

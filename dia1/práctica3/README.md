@@ -93,5 +93,42 @@ fs.readFile('loremLigero.txt', 'utf8', function(err, contents) {
 console.log('Otras actividades!!!');
 console.log('Fin del programa');
 ```
+4. Antes de ejecutar y analizar este programa instala el paquete chalk. Chalk es un paquete que permite cambiar de color el texto de salida.
+
+
+![Screenshot](image6.png)
+
+5. Una vez instalada la dependencia, ejecutamos el programa asincrono2.js
+
+![Screenshot](image7.png)
+
+Cómo se puede observar, la llamada a la función ```readFile ``` de *loremLigero.txt* es ejecutada inmediatemante en ambas llamadas, sin embargo el archivo *lorem.txt* debe ser procesado asincronicamente.
+
 
 # Callback's
+
+Una vez que tenemos claros los conceptos de funciones y la ejecución asóncrona e Node.js, podemos hablar de como se procesan los resultados en una función especial de nombre callback (retrollamada).
+
+Un callback es una función que es pasada com argumento a otra función y es ejecutada de forma asincrona, al  momento que la resolución de la solicitud de un recurso externo responda, como por ejemplo una petición http, una consulta a base de datos o un acceso a un archivo físico.
+
+Este tipo de ejecución y resolución de llamados resultan ser algo confusos, sobre todo  al momento de programar sistemas con multiples peticiones de recursos. Node.js no es el autor de este tipo  de programación, lo hereda de javascript, sin embargo casi todo lo que se programará mas adelante con Node.js se resolvare con una llamada ``` callback ```
+
+El siguiente código establece el patron de software para implementar un callback:
+
+```
+function duplica2(mensaje, callback){
+    console.log(mensaje);
+    callback();
+}
+
+//llamada
+duplica2("Duplicando", function(){
+//hacemos algo de lógica de negocio aquí
+console.log("Yo soy la retrollamada");
+});
+
+```
+
+6. Ejecuta el programa desde el shell
+
+![Screenshot](image8.png)

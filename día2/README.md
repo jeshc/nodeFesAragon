@@ -10,10 +10,13 @@ y permite a los desarrolladores tener a su disposición una gran cantidad de mó
 4. Las variables son privadas al módulo.
 
 
-
+## Práctica 1
 - Escribir e importar paquetes a Node
 - Usar el repositorio de paquetes npmjs.com
 - Manejo de paquetes
+- npm install
+
+## Práctica 2
 - npm init y package.json
 - Manejo de dependencias  y npm install sin argumentos
 

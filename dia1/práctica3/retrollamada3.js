@@ -4,7 +4,7 @@
 */
 
 function duplicaN(mensaje,n, callback){
-    console.log(mensaje);
+    console.log("Desde Duplica N:"+mensaje);
     callback(mensaje,n);
 }
 

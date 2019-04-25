@@ -1,4 +1,4 @@
-function printString(string, callback){
+function accionBD(string, callback){
   setTimeout(
       () => {
           console.log(string)
@@ -9,17 +9,17 @@ function printString(string, callback){
 }
 
 
-function printAll(){
-  console.log('Haz algo antes de A');
-  printString("A", () => {
-    console.log('Haz algo antes de B');
-      printString("B", () => {
-        console.log('Haz algo antes de C');
-          printString("C", () => {})
+function procesarDatos(){
+  console.log('Haz algo antes de SQL 1');
+  accionBD("consulta sql 1", () => {
+    console.log('Haz algo antes de SQL 2');
+      accionBD("consulta SQL 2", () => {
+        console.log('Haz algo antes de SQL 3');
+          accionBD("Consulta SQL 3", () => {})
         })
-        console.log('Haz algo Despues de B');
+        console.log('Haz algo Despues de SQl 2');
     })
-    console.log('Haz algo Despues de A');
+    console.log('Haz algo Despues de SQL 1');
     console.log('La vida Sigue....');
 }
-printAll()
+procesarDatos()

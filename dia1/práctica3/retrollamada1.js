@@ -1,8 +1,4 @@
-
-/*
-
-*/
-
+// retrollamada1.js
 function duplica2(mensaje, callback){
     console.log(mensaje);
     callback();
@@ -10,6 +6,6 @@ function duplica2(mensaje, callback){
 
 //llamada
 duplica2("Duplicando", function(){
-//do some custom redirect logic
+//hacemos algo de lógica de negocio aquí
 console.log("Yo soy la retrollamada");
 });
