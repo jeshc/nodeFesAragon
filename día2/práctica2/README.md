@@ -148,7 +148,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
     ```
 
-  - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de de colores
+  - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de de colores.
 
 # paquete request
 
@@ -159,21 +159,23 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   ![Screenshot](image6.PNG)
 
-  1. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
+  7. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
     - Crear la carpeta *ejemplo1*.
     - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
     - Agrega la dependencia ``` request ```
     - Agrega el script ``` "start": "node index.js" ```
     - Crea el archivo index.js y copia el siguiente código:
+
       ```
-      // index.js -> código original de la página oficial de request en npmjs.com
-      var request = require('request');
-      request('http://www.google.com', function (error, response, body) {
-        console.log('error:', error); // Print the error if one occurred
-        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', body); // Print the HTML for the Google homepage.
-      });
+        // index.js -> código original de la página oficial de request en npmjs.com
+        var request = require('request');
+        request('http://www.google.com', function (error, response, body) {
+          console.log('error:', error); // Print the error if one occurred
+          console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+          console.log('body:', body); // Print the HTML for the Google homepage.
+        });
       ```
+
     - Ejecuta el proyecto con ``` npm start ```
 
     - Resultado esperado:
@@ -184,6 +186,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
     - Resultado esperado:
 
       ![Screenshot](image8.PNG)
+      
     - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
     https://pokeapi.co/api/v2/pokemon/pikachu/
     - muestra las habilidades de pikachu.
