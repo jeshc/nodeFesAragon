@@ -113,6 +113,25 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
   - Crea la carpeta ejemplo2
   - Entra a la carpeta y ejecuta ``` npm init ```
+  ```
+  {
+    "name": "ejemplo2",
+    "version": "1.0.0",
+    "description": "ejemplo 2 para la clase",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "env FORCE_COLOR=1 node index.js"
+    },
+    "author": "jesh",
+    "license": "MIT",
+    "dependencies": {
+      "chalk-animation": "1.6.0"
+    }
+  }
+
+```
+
   - Sigue las instrucciones en pantalla.
   - Agrega la dependencia ``` chalk-animation  ``` en la versión 1.6.0.
   - El archivo principal debe ser index.js (por defecto).
@@ -125,4 +144,5 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
   setTimeout(() => {
       console.log('fin');
   }, 5000);
+
   ```
