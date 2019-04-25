@@ -174,9 +174,10 @@ La siguiente imagen muestra la información básica del paquete en la página de
           console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
           console.log('body:', body); // Print the HTML for the Google homepage.
         });
+        
       ```
 
-    - Ejecuta el proyecto con ```npm start``` .
+    - Ejecuta el proyecto con npm start .
 
     - Resultado esperado:
 
