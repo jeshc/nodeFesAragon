@@ -1,0 +1,23 @@
+{
+  "name": "mirequest",
+  "version": "1.0.0",
+  "description": "Primer request http con nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "FES",
+    "Aragón",
+    "UNAM",
+    "IS",
+    "ICO",
+    "FESA"
+  ],
+  "author": "jeshc",
+  "license": "MIT",
+  "dependencies": {
+    "request": "2.88.0"
+  }
+}
