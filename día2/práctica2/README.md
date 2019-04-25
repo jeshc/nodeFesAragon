@@ -34,7 +34,7 @@ En ejemplo de este archivo es el siguiente:
 
 1. Este archivo permitirá a la herramienta NPM realizar actividades automatizadas para el proyecto, como por ejemplo instalarlo, para ello se emplea el comando ``` npm install ```
 
-![Screenshot](image1.png)
+![Screenshot](image1.PNG)
 
 Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión del paquete chalk.
 
@@ -45,11 +45,11 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
  ```
  2. Podemos observar el contenido de la nueva carpeta *node_modules*
 
- ![Screenshot](image2.png)
+ ![Screenshot](image2.PNG)
 
  3. Puedes revisar los paquetes instalados para este proyecto con ``` npm list ```
 
-  ![Screenshot](image3.png)
+  ![Screenshot](image3.PNG)
 
 4. una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
 ```
@@ -60,7 +60,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 ```
 y producirá el siguiente resultado:
 
-  ![Screenshot](image4.png)
+  ![Screenshot](image4.PNG)
 
 Como se puede observar el script *start* tiene configurado la ejecución ``` node index.js ```, cuya lógica puedes explorar abriendo el archivo.
 
@@ -102,7 +102,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 ```
 - Ejecuta el proyecto nuevamente.
 
-  ![Screenshot](image5.png)
+  ![Screenshot](image5.PNG)
 
 
 ### npm init ###
