@@ -60,7 +60,7 @@ Cómo se puede observar la llamada de la operación ``` readfile ``` requiere de
 
 
 
-3. El siguiente programa es una ligera modificación al anterior en donde se leen dos arcivos, uno llamado *loremLigero.txt* con 447 caracteres en total y otro de nombre *lorem.txt* con 17434 caracteres.
+3. El siguiente programa es una ligera modificación al anterior en donde se leen dos archivos, uno llamado *loremLigero.txt* con 447 caracteres en total y otro de nombre *lorem.txt* con 17434 caracteres.
 
 ```
 //asincrono2.js
@@ -109,11 +109,11 @@ Cómo se puede observar, la llamada a la función ```readFile ``` de *loremLiger
 
 # Callback's
 
-Una vez que tenemos claros los conceptos de funciones y la ejecución asóncrona e Node.js, podemos hablar de como se procesan los resultados en una función especial de nombre callback (retrollamada).
+Una vez que tenemos claros los conceptos de funciones y la ejecución asíncrona en Node.js, podemos hablar de como se procesan los resultados en una función especial de nombre callback (retrollamada).
 
-Un callback es una función que es pasada com argumento a otra función y es ejecutada de forma asincrona, al  momento que la resolución de la solicitud de un recurso externo responda, como por ejemplo una petición http, una consulta a base de datos o un acceso a un archivo físico.
+Un callback es una función que es pasada como argumento a otra función y es ejecutada de forma asíncrona, al  momento que la resolución de la solicitud de un recurso externo responda, como por ejemplo una petición http, una consulta a base de datos o un acceso a un archivo físico.
 
-Este tipo de ejecución y resolución de llamados resultan ser algo confusos, sobre todo  al momento de programar sistemas con multiples peticiones de recursos. Node.js no es el autor de este tipo  de programación, lo hereda de javascript, sin embargo casi todo lo que se programará mas adelante con Node.js se resolvare con una llamada ``` callback ```
+Este tipo de ejecución y resolución de llamados resultan ser algo confusos, sobre todo  al momento de programar sistemas con multiples peticiones de recursos. Node.js no es el autor de este tipo  de programación, lo hereda de javascript, sin embargo casi todo lo que se programará mas adelante con Node.js se resolverá con una llamada ``` callback ```
 
 El siguiente código establece el patron de software para implementar un callback:
 
