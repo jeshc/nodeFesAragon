@@ -1,16 +1,16 @@
-### el archivo package.json
+### El archivo **package.json**
 
-Todo proyecto node debe contar con un archivo especial con notación json que lo describa. Entre la información que debe contener este archivo esta:
+Todo proyecto Node.js debe contar con un archivo especial con notación JSON que lo describa. Entre la información que debe contener este archivo esta:
 
 - El nombre del proyecto.
 - Una descripción del mismo.
 - Versión.
 - Autor.
 - Información del repositorio CVS.
-- dependencias.
-- entre otros.
+- Dependencias.
+- Entre otros.
 
-En ejemplo de este archivo es el siguiente:
+Como se muestra a continuación:
 
 ```
 {
@@ -36,8 +36,8 @@ En ejemplo de este archivo es el siguiente:
 
 ![Screenshot](image1.PNG)
 
-Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión del paquete chalk.
-
+<p> Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión del paquete chalk.
+</p>
 ```
 "dependencies": {
   "chalk": "2.3.x"
@@ -51,7 +51,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
   ![Screenshot](image3.PNG)
 
-4. una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
+4. Una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
 
 ```
 "scripts": {
@@ -93,8 +93,8 @@ prerestart, restart, postrestart: Run by the npm restart command. Note: npm rest
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 ```
 #### Ejercicio:
-- Agregar la dependencia ``` "asciify":"asciify" ```
-- Instala las dependencias
+- Agregar la dependencia ``` "asciify":"asciify" ```.
+- Instala las dependencias.
 - Importar la biblioteca con ``` require ... ``` el código fuente del proyecto.
 - Codifica lo siguiente al final del mismo:
 
