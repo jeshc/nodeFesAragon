@@ -36,7 +36,7 @@ Se explica con dos imagenes la diferencia entre estas dos formas de ejecución:
 
 ![Screenshot](image3.png)
 
-El siguiente ejemplo muestra cómo nodejs ejecuta funciones de forma asincrona, en donde se hace la lectura de un archivo relativamente grande y por lo tanto, nodejs no espera a que finalice dicha acción;
+El siguiente ejemplo muestra cómo Node.js ejecuta funciones de forma asíncrona, en donde se hace la lectura de un archivo relativamente grande y por lo tanto, Node.js no espera a que finalice dicha acción;
 
 ```
 var fs = require('fs');
@@ -56,11 +56,11 @@ console.log('Fin del programa');
 
 ![Screenshot](image4.png)
 
-Cómo se puede observar la llamada de la operación ``` readfile ``` requiere de más tiempo para acceder al medio de almacenamiento, por lo cual node no espera a que concluya la operación y de froma asíncrona atiende el final de la lectura.
+Cómo se puede observar la llamada de la operación ``` readfile ``` requiere de más tiempo para acceder al medio de almacenamiento, por lo cual Node.js no espera a que concluya la operación y de forma asíncrona atiende el final de la lectura.
 
 
 
-3. El programa siguietne es una ligera modificación al anterior en donde se leen dos arcivos, uno llamado *loremLigero.txt* con 447 caracteres en total y otro de nombre *lorem.txt* con 17434 caracteres.
+3. El siguiente programa es una ligera modificación al anterior en donde se leen dos arcivos, uno llamado *loremLigero.txt* con 447 caracteres en total y otro de nombre *lorem.txt* con 17434 caracteres.
 
 ```
 //asincrono2.js
@@ -95,7 +95,7 @@ fs.readFile('loremLigero.txt', 'utf8', function(err, contents) {
 console.log('Otras actividades!!!');
 console.log('Fin del programa');
 ```
-4. Antes de ejecutar y analizar este programa instala el paquete chalk. Chalk es un paquete que permite cambiar de color el texto de salida.
+4. Antes de ejecutar y analizar este programa instala el paquete Chalk con el siguiente comando ``` npm install chalk ```, Chalk es un paquete que permite cambiar de color el texto de salida.
 
 
 ![Screenshot](image6.png)
