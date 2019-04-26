@@ -36,7 +36,7 @@ Como se muestra a continuación:
 
 ![Screenshot](image1.PNG)
 
-* Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión del paquete chalk.
+>Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión >del paquete chalk.
 
 ```
 "dependencies": {
