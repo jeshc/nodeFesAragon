@@ -25,7 +25,9 @@ console.log('Fin del programa');
 
 
 En el libro de Fernando Doglio:
-```Doglio, F. (2018). REST API Development with Node.js: Manage and Understand the Full Capabilities of Successful REST Development. Berkeley, CA: Apress.
+```
+Doglio, F. (2018). REST API Development with Node.js: Manage and Understand the Full Capabilities of Successful REST Development. Berkeley, CA: Apress.
+
 ```
 Se explica con dos imagenes la diferencia entre estas dos formas de ejecución:
 
