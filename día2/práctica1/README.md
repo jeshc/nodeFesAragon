@@ -46,7 +46,7 @@ Para revisar todos los paquetes instalados localmente ejecutamos ``` npm list ``
 
 ![Screenshot](image3.PNG)
 
-Para instalar localmente el paquete chalk requerimos hacer: ``` npm install chalk ```
+Para instalar localmente el paquete Chalk requerimos hacer: ``` npm install chalk ```
 
 ![Screenshot](image4.PNG)
 
@@ -54,14 +54,14 @@ Este comando descarga el paquete desde el repositorio general de node (npmjs.com
 
 ![Screenshot](image5.PNG)
 
-El árbol mostrado a la salida, muestra todos los módulos instalados localmente. Todos los elementos bajo el nodo chalk@2.4.2 son las dependencias propias de chalk.
+El árbol mostrado a la salida, muestra todos los módulos instalados localmente. Todos los elementos bajo el nodo chalk@2.4.2 son las dependencias propias de Chalk.
 
 Observa que al listar el contenido de tu carpeta se puede observar la creación de una carpeta nueva de nombre ``` node_modules ```
 
 ![Screenshot](image6.PNG)
 
 
-3. Esribe el programa usandoChalk.js y ejecutalo.
+3. Escribe el programa usandoChalk.js y ejecutalo.
 
 ```
 //usandoChalk.js
@@ -74,7 +74,7 @@ console.log(chalk.purple('FES Aragón UNAM!'));
 
 ![Screenshot](imag7.PNG)
 
-Para ver la documentación completa de chalk visita: https://www.npmjs.com/package/chalk
+Para ver la documentación completa de [Chalk](https://www.npmjs.com/package/chalk).
 
 En la página: https://www.npmjs.com/ puedes consultar los paquetes disponibles, con más de 960,000 de ellos; lo cuál lo hace el contenedor de bibliotecas de software más grande desde el 2017. Tan sólo en una semana puede tener 11 mil millones de descargas.
 
