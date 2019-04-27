@@ -10,11 +10,7 @@ Todo proyecto Node.js debe contar con un archivo especial con notación JSON que
 - Dependencias.
 - Entre otros.
 
-<<<<<<< HEAD
-Como se muestra a continuación:
-=======
 Este archivo es empleado por la herramienta NPM para instalar dependencias de forma automatizada, ejecutar las pruebas, ejecutar la aplicación, entre otras. Para comprende el uso de este archivo hagamos el siguiente:
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
 1. Ejercicio.
 
@@ -64,9 +60,6 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
   ![Screenshot](image3.PNG)
 
-<<<<<<< HEAD
-4. Una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
-=======
 5. Una vez instaladas las dependencias creamos el archivo principal index.js  y agregamos el siguiente código:
        ```
        const gis = require('chalk');
@@ -150,7 +143,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
 
 6. ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
+
 
 ```
 "scripts": {
@@ -196,14 +189,9 @@ preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 ```
 
 #### Ejercicio:
-<<<<<<< HEAD
-- Agregar la dependencia ``` "asciify":"asciify" ```.
-- Instala las dependencias.
-=======
 
 - Agregar la dependencia ``` "asciify":"asciify" ```
 - Instala las dependencias
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 - Importar la biblioteca con ``` require ... ``` el código fuente del proyecto.
 - Codifica lo siguiente al final del mismo:
 
@@ -299,21 +287,12 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   ![Screenshot](image6.PNG)
 
-<<<<<<< HEAD
-  7. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
-  - Crear la carpeta *miRequest*.
-  - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```.
-  - Agrega la dependencia ``` request ```.
-  - Agrega el script ``` "start": "node index.js" ```.
-  - Crea el archivo index.js y copia el siguiente código:
-=======
   8. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
     - Crear la carpeta *miRequest*.
     - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
     - Agrega la dependencia ``` request ```
     - Agrega el script ``` "start": "node index.js" ```
     - Crea el archivo index.js y copia el siguiente código:
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
       ```
         // index.js -> código original de la página oficial de request en npmjs.com
@@ -326,11 +305,8 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ```
 
-<<<<<<< HEAD
+
   - Ejecuta el proyecto con ```npm start``` .
-=======
-    - Ejecuta el proyecto con npm start .
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
     - Resultado esperado:
 
@@ -341,17 +317,12 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ![Screenshot](image8.PNG)
 
-<<<<<<< HEAD
+
   - Ahora solicita la información del pokemon pikachu a la [pokeapi](
     https://pokeapi.co/api/v2/pokemon/pikachu/).
     <br>
     Muestra las habilidades de pikachu.
-=======
-    - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
-    https://pokeapi.co/api/v2/pokemon/pikachu/
-    - muestra las habilidades de pikachu.
 
 
 # Un servidor Web con Node JS
     En esta sección vamos a crear nuestro primer servidor web usando el paquete http.
->>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
