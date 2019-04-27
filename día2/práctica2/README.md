@@ -166,9 +166,9 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   7. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
   - Crear la carpeta *miRequest*.
-  - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
-  - Agrega la dependencia ``` request ```
-  - Agrega el script ``` "start": "node index.js" ```
+  - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```.
+  - Agrega la dependencia ``` request ```.
+  - Agrega el script ``` "start": "node index.js" ```.
   - Crea el archivo index.js y copia el siguiente código:
 
       ```
@@ -182,7 +182,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ```
 
-  - Ejecuta el proyecto con npm start .
+  - Ejecuta el proyecto con ```npm start``` .
 
   - Resultado esperado:
 
@@ -193,6 +193,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ![Screenshot](image8.PNG)
 
-  - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
-    https://pokeapi.co/api/v2/pokemon/pikachu/
-    |- muestra las habilidades de pikachu.
+  - Ahora solicita la información del pokemon pikachu a la [pokeapi](
+    https://pokeapi.co/api/v2/pokemon/pikachu/).
+    <br>
+    Muestra las habilidades de pikachu.
