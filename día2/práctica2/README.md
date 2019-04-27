@@ -1,20 +1,20 @@
-### el archivo package.json
+### El archivo **package.json**
 
-Todo proyecto node debe contar con un archivo especial con notación json que lo describa. Entre la información que debe contener este archivo esta:
+Todo proyecto Node.js debe contar con un archivo especial con notación JSON que lo describa. Entre la información que debe contener este archivo esta:
 
 - El nombre del proyecto.
 - Una descripción del mismo.
 - Versión.
 - Autor.
 - Información del repositorio CVS.
-- dependencias.
-- entre otros.
+- Dependencias.
+- Entre otros.
 
 Este archivo es empleado por la herramienta NPM para instalar dependencias de forma automatizada, ejecutar las pruebas, ejecutar la aplicación, entre otras. Para comprende el uso de este archivo hagamos el siguiente:
 
 1. Ejercicio.
 
-  - Crear una carpeta de nombre *mi-proyecto *
+  - Crear una carpeta de nombre *mi-proyecto*
   - Entrar a la nueva carpeta y crear el archivo **package.json**
   - Editar el archivo **package.json** para contener el siguieten código:
 
@@ -144,6 +144,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
 6. ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
 
+
 ```
 "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
@@ -151,7 +152,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 }
 ```
 
-y producirá el siguiente resultado:
+   y producirá el siguiente resultado:
 
   ![Screenshot](image4.PNG)
 
@@ -159,7 +160,7 @@ Como se puede observar el script *start* tiene configurado la ejecución ``` nod
 
 También es posible establecer variables de entorno de sistema operativo, para el correcto funcionamiento del proyecto: ``` env FORCE_COLOR=1  ```.
 
-5. Te invito a eliminar esta sección ```env FORCE_COLOR=1 ``` del script start y volver a ajecutar ``` npm start ```
+7. Te invito a eliminar esta sección ```env FORCE_COLOR=1 ``` del script start y volver a ajecutar ``` npm start ```
 
 ### Documentación de la seccion Scripts
 
@@ -210,14 +211,14 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
  Es el comando para inicializar un proyecto, por medio de un asistente en la consola shell.
 
-6. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```
+8. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```.
 
-  - Crea la carpeta ejemplo2
-  - Entra a la carpeta y ejecuta ``` npm init ```
+  - Crea la carpeta *ejemplo2*.
+  - Entra a la carpeta y ejecuta ``` npm init ```.
   - Sigue las instrucciones en pantalla.
   - Agrega la dependencia ``` chalk-animation  ``` en la versión 1.6.0.
   - El archivo principal debe ser index.js (por defecto).
-  - Verifica que el archivo ```package.json```sea equivalente a .
+  - Verifica que el archivo ```package.json```sea equivalente a:
 
       ```
         {
@@ -256,9 +257,9 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 #### npm install --save
 Instala el paquete de forma local y agrega las dependecias al archivo ```package.json```
 
-7. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
+9. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
 
-   ![Screenshot](image9.PNG)
+   ![Screenshot](image9.png)
 
 
 #### npm install --save-de
@@ -286,7 +287,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   ![Screenshot](image6.PNG)
 
-  8. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
+  10. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
     - Crear la carpeta *miRequest*.
     - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
     - Agrega la dependencia ``` request ```
@@ -304,7 +305,8 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ```
 
-    - Ejecuta el proyecto con npm start .
+
+  - Ejecuta el proyecto con ```npm start``` .
 
     - Resultado esperado:
 
@@ -315,9 +317,11 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ![Screenshot](image8.PNG)
 
-    - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
-    https://pokeapi.co/api/v2/pokemon/pikachu/
-    - muestra las habilidades de pikachu.
+
+  - Ahora solicita la información del pokemon pikachu a la [pokeapi](
+    https://pokeapi.co/api/v2/pokemon/pikachu/).
+    <br>
+  - Muestra las habilidades de pikachu.
 
 
 # Un servidor Web con Node JS
