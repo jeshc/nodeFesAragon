@@ -10,48 +10,147 @@ Todo proyecto Node.js debe contar con un archivo especial con notación JSON que
 - Dependencias.
 - Entre otros.
 
+<<<<<<< HEAD
 Como se muestra a continuación:
+=======
+Este archivo es empleado por la herramienta NPM para instalar dependencias de forma automatizada, ejecutar las pruebas, ejecutar la aplicación, entre otras. Para comprende el uso de este archivo hagamos el siguiente:
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
-```
-{
-  "name": "mi-proyecto",
-  "version": "0.0.1",
-  "description": "Un proyecto de ejemplo el cual escribe letras de colores",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"env FORCE_COLOR=1 node index.js"
-  },
-  "author": "jeshc",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "2.3.x"
-  }
-}
+1. Ejercicio.
+
+  - Crear una carpeta de nombre *mi-proyecto *
+  - Entrar a la nueva carpeta y crear el archivo **package.json**
+  - Editar el archivo **package.json** para contener el siguieten código:
+
+    ```
+    {
+      "name": "mi-proyecto",
+      "version": "0.0.1",
+      "description": "Un proyecto de ejemplo el cual escribe letras de colores",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start":"env FORCE_COLOR=1 node index.js"
+      },
+      "author": "jeshc",
+      "license": "MIT",
+      "dependencies": {
+        "chalk": "2.3.x"
+      }
+    }
+
+    ```
+      Cómo se puede observar ademas de la información básica del proyecto, contamos con dos secciones importantes: ```scripts``` y ```dependencies```. Scripts establece los comandos a ejecutar cuando por ejemplo deseamos ejecutar elproyecto y la sección dependencias lo emplea NPM para instalar las dependencias de forma automatizada.
 
 
-```
 
-1. Este archivo permitirá a la herramienta NPM realizar actividades automatizadas para el proyecto, como por ejemplo instalarlo, para ello se emplea el comando ``` npm install ```
+2. Este archivo permitirá a la herramienta NPM realizar actividades automatizadas para el proyecto, como por ejemplo instalarlo, para ello se emplea el comando ``` npm install ```
 
-![Screenshot](image1.PNG)
+  ![Screenshot](image1.PNG)
 
 Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``` dependencies  ```, que consta de la inclusión del paquete chalk.
 
-```
-"dependencies": {
-  "chalk": "2.3.x"
-}
- ```
- 2. Podemos observar el contenido de la nueva carpeta *node_modules*
+  ```
+  "dependencies": {
+    "chalk": "2.3.x"
+  }
+   ```
+3. Podemos observar el contenido de la nueva carpeta *node_modules*
 
  ![Screenshot](image2.PNG)
 
- 3. Puedes revisar los paquetes instalados para este proyecto con ``` npm list ```
+
+4. Puedes revisar los paquetes instalados para este proyecto con ``` npm list ```
 
   ![Screenshot](image3.PNG)
 
+<<<<<<< HEAD
 4. Una vez instaladas las dependencias es posible ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
+=======
+5. Una vez instaladas las dependencias creamos el archivo principal index.js  y agregamos el siguiente código:
+       ```
+       const gis = require('chalk');
+       var asciify= require('asciify');
+
+           function pinta(letra, index) {
+             gis.enabled=true;
+             switch (index) {
+               case 0:
+                 process.stdout.write(gis.black.bgBlackBright(letra));
+                 break;
+               case 1:
+                 process.stdout.write(gis.red(letra));
+                 break;
+               case 2:
+                 process.stdout.write(gis.green(letra));
+                 break;
+               case 3:
+                 process.stdout.write(gis.yellow(letra));
+                 break;
+               case 4:
+                 process.stdout.write(gis.blue(letra));
+                 break;
+               case 5:
+                 process.stdout.write(gis.magenta(letra));
+                 break;
+               case 6:
+                 process.stdout.write(gis.cyan(letra));
+                 break;
+               case 7:
+                 process.stdout.write(gis.white(letra));
+                 break;
+               case 8:
+                 process.stdout.write(gis.gray(letra));
+                 break;
+               case 9:
+                 process.stdout.write(gis.redBright(letra));
+                 break;
+               case 10:
+                 process.stdout.write(gis.yellowBright(letra));
+                 break;
+               case 11:
+                 process.stdout.write(gis.blueBright(letra));
+                 break;
+               case 12:
+                 process.stdout.write(gis.magentaBright(letra));
+                 break;
+               case 13:
+                 process.stdout.write(gis.cyanBright(letra));
+                 break;
+               case 14:
+                 process.stdout.write(gis.whiteBright(letra));
+                 break;
+               case 15:
+                 process.stdout.write(gis.greenBright(letra));
+                 break;
+               default:
+                 process.stdout.write(gis.red(letra));
+             }
+           }
+
+           function main() {
+
+             var texto = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+
+             var j = 0;
+
+             for (j = 0; j < texto.length; j++) {
+               //console.log(texto.charAt(j));
+               pinta(texto.charAt(j), j % 16);
+             }
+             console.log();
+
+           }
+
+           main();
+
+           ```
+
+
+
+
+6. ejecutar el proyecto con el comando ``` npm start ``` lo cual ejecutara la sección scripts -> start del archivo package.json:
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
 ```
 "scripts": {
@@ -66,9 +165,12 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
 Como se puede observar el script *start* tiene configurado la ejecución ``` node index.js ```, cuya lógica puedes explorar abriendo el archivo.
 
-Como se puede ver, también es posible establecer variables de entorno de sistema operativo, para el correcto funcionamiento del proyecto: ``` env FORCE_COLOR=1  ```.
+También es posible establecer variables de entorno de sistema operativo, para el correcto funcionamiento del proyecto: ``` env FORCE_COLOR=1  ```.
 
-5. Te invito a eliminar esta sección del script start y volver a ajecutar ``` npm start ```
+5. Te invito a eliminar esta sección ```env FORCE_COLOR=1 ``` del script start y volver a ajecutar ``` npm start ```
+
+### Documentación de la seccion Scripts
+
 
 Según la documentación oficial de NPM los scripts aceptados son:
 
@@ -92,9 +194,16 @@ prestart, start, poststart: Run by the npm start command.
 prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 ```
+
 #### Ejercicio:
+<<<<<<< HEAD
 - Agregar la dependencia ``` "asciify":"asciify" ```.
 - Instala las dependencias.
+=======
+
+- Agregar la dependencia ``` "asciify":"asciify" ```
+- Instala las dependencias
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 - Importar la biblioteca con ``` require ... ``` el código fuente del proyecto.
 - Codifica lo siguiente al final del mismo:
 
@@ -155,6 +264,32 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
   - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de de colores.
 
+## Otros comandos NPM
+
+#### npm install --save
+Instala el paquete de forma local y agrega las dependecias al archivo ```package.json```
+
+7. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
+
+   ![Screenshot](image9.PNG)
+
+
+#### npm install --save-de
+
+Lo mismo que la anterior pero solo para desarrollo. No se incluyen en producción.
+
+
+#### npm install -g <nombre_paquete>
+Le indica a NPM que instale el paquete de forma global.
+
+#### npm uninstall <nombre_paquete>
+Elimina de forma local el paquete. Para eliminar de forma global agregar el argumento **-g**.
+
+#### npm update -save
+Actualiza los paquetes a sus versiones mas actuales. Modifica el archivo package.json si es necesario.
+
+
+
 # paquete request
 
 El paquete request de Node.js es un cliente HTTP simple.
@@ -164,12 +299,21 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   ![Screenshot](image6.PNG)
 
+<<<<<<< HEAD
   7. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
   - Crear la carpeta *miRequest*.
   - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```.
   - Agrega la dependencia ``` request ```.
   - Agrega el script ``` "start": "node index.js" ```.
   - Crea el archivo index.js y copia el siguiente código:
+=======
+  8. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
+    - Crear la carpeta *miRequest*.
+    - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
+    - Agrega la dependencia ``` request ```
+    - Agrega el script ``` "start": "node index.js" ```
+    - Crea el archivo index.js y copia el siguiente código:
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
       ```
         // index.js -> código original de la página oficial de request en npmjs.com
@@ -182,18 +326,32 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
       ```
 
+<<<<<<< HEAD
   - Ejecuta el proyecto con ```npm start``` .
+=======
+    - Ejecuta el proyecto con npm start .
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
 
-  - Resultado esperado:
+    - Resultado esperado:
 
       ![Screenshot](image7.PNG)
 
-  - Modifica el código para solicitar información del API REST de ejemplo: *http://aragonapi.herokuapp.com/api/users/1*
-  - Resultado esperado:
+    - Modifica el código para solicitar información del API REST de ejemplo: *http://aragonapi.herokuapp.com/api/users/1*
+    - Resultado esperado:
 
       ![Screenshot](image8.PNG)
 
+<<<<<<< HEAD
   - Ahora solicita la información del pokemon pikachu a la [pokeapi](
     https://pokeapi.co/api/v2/pokemon/pikachu/).
     <br>
     Muestra las habilidades de pikachu.
+=======
+    - Ahora solicita la infromación del pokemon pikachu a la pokeapi.
+    https://pokeapi.co/api/v2/pokemon/pikachu/
+    - muestra las habilidades de pikachu.
+
+
+# Un servidor Web con Node JS
+    En esta sección vamos a crear nuestro primer servidor web usando el paquete http.
+>>>>>>> 1a3e7b45b43b92160b8abced63545ce89dab77e0
