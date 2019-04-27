@@ -64,6 +64,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
        ```
        const gis = require('chalk');
        var asciify= require('asciify');
+
            function pinta(letra, index) {
              gis.enabled=true;
              switch (index) {
