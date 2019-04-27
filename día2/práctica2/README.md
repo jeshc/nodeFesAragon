@@ -160,7 +160,7 @@ Como se puede observar el script *start* tiene configurado la ejecución ``` nod
 
 También es posible establecer variables de entorno de sistema operativo, para el correcto funcionamiento del proyecto: ``` env FORCE_COLOR=1  ```.
 
-5. Te invito a eliminar esta sección ```env FORCE_COLOR=1 ``` del script start y volver a ajecutar ``` npm start ```
+7. Te invito a eliminar esta sección ```env FORCE_COLOR=1 ``` del script start y volver a ajecutar ``` npm start ```
 
 ### Documentación de la seccion Scripts
 
@@ -211,7 +211,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
  Es el comando para inicializar un proyecto, por medio de un asistente en la consola shell.
 
-6. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```.
+8. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```.
 
   - Crea la carpeta *ejemplo2*.
   - Entra a la carpeta y ejecuta ``` npm init ```.
@@ -257,7 +257,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 #### npm install --save
 Instala el paquete de forma local y agrega las dependecias al archivo ```package.json```
 
-7. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
+9. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
 
    ![Screenshot](image9.png)
 
@@ -287,7 +287,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
 
   ![Screenshot](image6.PNG)
 
-  8. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
+  10. Vámos a usar este paquete para iniciar nuestro camino al consumo de un REST.
     - Crear la carpeta *miRequest*.
     - Entramos a la carpeta e inicializamos un proyecto con ``` npm init ```
     - Agrega la dependencia ``` request ```
