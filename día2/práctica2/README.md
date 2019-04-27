@@ -135,6 +135,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
            }
 
            main();
+
            ```
 
 
