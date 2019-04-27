@@ -14,7 +14,7 @@ Este archivo es empleado por la herramienta NPM para instalar dependencias de fo
 
 1. Ejercicio.
 
-  - Crear una carpeta de nombre *mi-proyecto *
+  - Crear una carpeta de nombre *mi-proyecto*
   - Entrar a la nueva carpeta y crear el archivo **package.json**
   - Editar el archivo **package.json** para contener el siguieten código:
 
@@ -259,7 +259,7 @@ Instala el paquete de forma local y agrega las dependecias al archivo ```package
 
 7. Al  ejercicio anterior agregar el paquete ``` asciify ``` que es un paquete para crear banners con caracteres ASCII.
 
-   ![Screenshot](image9.PNG)
+   ![Screenshot](image9.png)
 
 
 #### npm install --save-de
@@ -321,7 +321,7 @@ La siguiente imagen muestra la información básica del paquete en la página de
   - Ahora solicita la información del pokemon pikachu a la [pokeapi](
     https://pokeapi.co/api/v2/pokemon/pikachu/).
     <br>
-    Muestra las habilidades de pikachu.
+  - Muestra las habilidades de pikachu.
 
 
 # Un servidor Web con Node JS
