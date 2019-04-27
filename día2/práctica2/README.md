@@ -114,14 +114,14 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
  Es el comando para inicializar un proyecto, por medio de un asistente en la consola shell.
 
-6. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```
+6. Crea un nuevo proyecto de nombre ejemplo2 con el comando ``` npm init ```.
 
-  - Crea la carpeta ejemplo2
-  - Entra a la carpeta y ejecuta ``` npm init ```
+  - Crea la carpeta *ejemplo2*.
+  - Entra a la carpeta y ejecuta ``` npm init ```.
   - Sigue las instrucciones en pantalla.
   - Agrega la dependencia ``` chalk-animation  ``` en la versión 1.6.0.
   - El archivo principal debe ser index.js (por defecto).
-  - Verifica que el archivo ```package.json```sea equivalente a .
+  - Verifica que el archivo ```package.json```sea equivalente a:
 
       ```
         {
