@@ -82,11 +82,40 @@ console.log( 'Escuchando conexión en el puerto 3000' );
 
 ```
 
-Al probar el programa el resultado debe ser el mismo, a pesar que ya se está 
+Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función * end* de la forma``` response.end() ```.
+
+#### serverhttp3
+
+```
+var Http = require( 'http' );
+
+var server = Http.createServer(function(request,response){
+    //console.log('Alguien entró');
+    response.writeHead(200, {'Content-Type': 'text/html'}); // cabecera http
+    response.write("<h1>Hola desde el node 3</h1>");// no se envía por que no se indica fin del documento
+    response.end(); // al fín se envía
+
+});
+
+server.listen( 3000, function( ) {
+console.log( 'Escuchando conexión en el puerto 3000' );
+});
+
+```
+
+Las modificaciones consisten en:
+  - establecer la cabecera de respuesta: ``` response.writeHead(200, {'Content-Type': 'text/html'}); ``` lo cual le indica al servidor el código http de respuesta. Los códigos de respuesta HTTP se pueden consultar aquí:https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+  -  Escribimos una respuesta en lenguaje HTML de la forma: ``` response.write("<h1>Hola desde el node 3</h1>");  ```. Este texto al ser recibido por el cliente Browser se interpreta y renderiza.
+  - Se invoca a la función end() Lo que provoca que se de por terminada la respuesta y se envíe la respuesta el cliente Web Browser.
+  - El resultado es:
+
+4.- Ejecuta el programa ''' serverhttp3 ``` y observa el resultado:
+
+![Screenshot](image3.PNG)
+
+## Al fin, ya tenemos nuestro primer servidor web con Node.js
 
 
-
-![Screenshot](image1_1.PNG)
 
 ![Screenshot](image1_2.PNG)
 
