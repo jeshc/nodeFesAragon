@@ -263,24 +263,24 @@ El resultado es el siguiente:
 ![Screenshot](image7_2.PNG)
 
 7. ** Ejercicio ** Modifica el código del proyecto serverhttp7 para que:
- - Cuando se soicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
- - Cuando se soicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
- - Cuando se soicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
+ - Cuando se solicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
+ - Cuando se solicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
+ - Cuando se solicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
 
 #### serverhttp8
 
 8. **Ejerccio** Módifica el proyecto serverhttp8 para que:
- - Cuando se soicite el path ``` /hola ``` y el METHOD=GET, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /hola ``` y el METHOD=GET, responda con el contenido JSON:
     ``` {"metodo":"GET" , "mensaje":"Hola"} ```
- - Cuando se soicite el path ``` /hola ``` y el METHOD=POST, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /hola ``` y el METHOD=POST, responda con el contenido JSON:
        ``` {"metodo":"POST" , "mensaje":"Hello", "accion":"guardar en bd"} ```
- - Cuando se soicite el path ``` /hola ``` y el METHOD=PATCH, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /hola ``` y el METHOD=PATCH, responda con el contenido JSON:
        ``` {"metodo":"PATCH" , "mensaje":"Bongiorno", "accion":"Actualizar en bd"} ```
- - Cuando se soicite el path ``` /adio ``` y el METHOD=GET, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /adios ``` y el METHOD=GET, responda con el contenido JSON:
        ``` {"metodo":"GET" , "mensaje":"Adios"} ```
- - Cuando se soicite el path ``` /adios ``` y el METHOD=POST, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /adios ``` y el METHOD=POST, responda con el contenido JSON:
        ``` {"metodo":"POST" , "mensaje":"Bye", "accion":"guardar en bd"} ```
- - Cuando se soicite el path ``` /adios ``` y el METHOD=PATCH, responda con el contenido JSON:
+ - Cuando se solicite el path ``` /adios ``` y el METHOD=PATCH, responda con el contenido JSON:
        ``` {"metodo":"PATCH" , "mensaje":"Ciao", "accion":"Actualizar en bd"} ```
 
 *NOTA*.- Se requiere modificar la cabecera ``` Content-Type ```
