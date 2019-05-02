@@ -1,11 +1,3 @@
-/*
- Ahora hagamos lo mismo pero leamos el contenido html desde un archivo.
- Ejercicio:
- - Modificar el archivo html y volver a cargar la página.
- - agregar el CDN del framework CSS de materialize
-
-
-*/
 var Http = require('http');
 var fs = require('fs');
 
@@ -15,6 +7,7 @@ var server = Http.createServer(function(request, response) {
       console.log(err);
       response.end("error");
     } else {
+      console.log(request.method);
       response.writeHead(200, {
         'Content-Type': 'text/html'
       }); // cabecera http
