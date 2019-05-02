@@ -266,10 +266,9 @@ El resultado es el siguiente:
  - Cuando se solicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
  - Cuando se solicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
  - Cuando se solicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
- - Cuando se solicite el path ``` /saludo ``` se responda con contenido **JSON** c``` {"metodo":"GET" , "mensaje":"Hola"} ```
+ - Cuando se solicite el path ``` /saludo ``` se responda con contenido **JSON** ``` {"metodo":"GET" , "mensaje":"Hola"} ```
 
 
-s
 #### serverhttp8
 
 8. **Ejerccio** Módifica el proyecto serverhttp8 para que:
