@@ -1,6 +1,6 @@
 ### El archivo **package.json**
 
-Todo proyecto Node.js debe contar con un archivo especial con notación JSON que lo describa. Entre la información que debe contener este archivo esta:
+Todo proyecto Node.js debe contar con un archivo especial con notación JSON que lo describa. Entre la información que debe contener este archivo estan:
 
 - El nombre del proyecto.
 - Una descripción del mismo.
@@ -10,13 +10,11 @@ Todo proyecto Node.js debe contar con un archivo especial con notación JSON que
 - Dependencias.
 - Entre otros.
 
-Este archivo es empleado por la herramienta NPM para instalar dependencias de forma automatizada, ejecutar las pruebas, ejecutar la aplicación, entre otras. Para comprende el uso de este archivo hagamos el siguiente:
+Este archivo es empleado por la herramienta NPM para instalar dependencias de forma automatizada, ejecutar las pruebas, ejecutar la aplicación, entre otras. Para comprender el uso de este archivo hagamos el siguiente ejercicio:
 
-1. Ejercicio.
-
-  - Crear una carpeta de nombre *mi-proyecto*
+1.- Crear una carpeta de nombre *mi-proyecto*
   - Entrar a la nueva carpeta y crear el archivo **package.json**
-  - Editar el archivo **package.json** para contener el siguieten código:
+  - Editar el archivo **package.json** para que contenga el siguiente código:
 
     ```
     {
@@ -36,11 +34,13 @@ Este archivo es empleado por la herramienta NPM para instalar dependencias de fo
     }
 
     ```
-      Cómo se puede observar ademas de la información básica del proyecto, contamos con dos secciones importantes: ```scripts``` y ```dependencies```. Scripts establece los comandos a ejecutar cuando por ejemplo deseamos ejecutar elproyecto y la sección dependencias lo emplea NPM para instalar las dependencias de forma automatizada.
+      Cómo se puede observar además de la información básica del proyecto, contamos con dos secciones importantes: ```scripts``` y ```dependencies```.
+      -> Scripts establece los comandos necesarios para relizar acciones, por ejemplo ejecutar el proyecto 
+      -> Dependencies lo emplea NPM para instalar las dependencias de forma automatizada.
 
 
 
-2. Este archivo permitirá a la herramienta NPM realizar actividades automatizadas para el proyecto, como por ejemplo instalarlo, para ello se emplea el comando ``` npm install ```
+2. Este archivo permitirá a la herramienta NPM realizar actividades automatizadas para el proyecto, para instalarlo se emplea el comando ``` npm install ```
 
   ![Screenshot](image1.PNG)
 
@@ -61,10 +61,10 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
   ![Screenshot](image3.PNG)
 
 5. Una vez instaladas las dependencias creamos el archivo principal index.js  y agregamos el siguiente código:
+
        ```
        const gis = require('chalk');
        var asciify= require('asciify');
-
            function pinta(letra, index) {
              gis.enabled=true;
              switch (index) {
@@ -168,24 +168,24 @@ También es posible establecer variables de entorno de sistema operativo, para e
 Según la documentación oficial de NPM los scripts aceptados son:
 
 ```
-prepublish: Run BEFORE the package is packed and published, as well as on local npm install without any arguments. (See below)
-prepare: Run both BEFORE the package is packed and published, on local npm install without any arguments, and when installing git dependencies (See below). This is run AFTER prepublish, but BEFORE prepublishOnly.
-prepublishOnly: Run BEFORE the package is prepared and packed, ONLY on npm publish. (See below.)
-prepack: run BEFORE a tarball is packed (on npm pack, npm publish, and when installing git dependencies)
-postpack: Run AFTER the tarball has been generated and moved to its final destination.
-publish, postpublish: Run AFTER the package is published.
-preinstall: Run BEFORE the package is installed
-install, postinstall: Run AFTER the package is installed.
-preuninstall, uninstall: Run BEFORE the package is uninstalled.
-postuninstall: Run AFTER the package is uninstalled.
-preversion: Run BEFORE bumping the package version.
-version: Run AFTER bumping the package version, but BEFORE commit.
-postversion: Run AFTER bumping the package version, and AFTER commit.
-pretest, test, posttest: Run by the npm test command.
-prestop, stop, poststop: Run by the npm stop command.
-prestart, start, poststart: Run by the npm start command.
-prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
-preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
+prepublish: Ejecutar ANTES de que el paquete esté empaquetado y publicado, así como en la instalación de npm local sin ningún argumento. 
+prepare: Ejecuta ambos ANTES de empaquetar y publicar el paquete, en la instalación local de npm sin ningún argumento, y al instalar las dependencias de git. Esto se ejecuta DESPUÉS de prepublish, pero ANTES de prepublishOnly.
+prepublishOnly: Ejecutar ANTES de que el paquete esté preparado y empaquetado, SOLAMENTE en la publicación de npm
+prepack: Ejecutar ANTES de que un archivo comprimido esté empaquetado (en el paquete npm, en la publicación npm, y al instalar las dependencias de git)
+postpack: Ejecutar DESPUÉS de que el archivo tar se haya generado y movido a su destino final.
+publish, postpublish: Ejecutar DESPUÉS de que se publique el paquete.
+preinstall: Ejecutar ANTES de instalar el paquete
+instale, postinstall: ejecute DESPUÉS de que el paquete esté instalado.
+preuninstall, uninstall: Ejecutar ANTES de que se desinstale el paquete.
+postuninstall: Ejecutar DESPUÉS de que se desinstale el paquete.
+preversion: Ejecutar ANTES de encontrarse con la versión del paquete.
+version: Ejecute DESPUÉS de encontrarse con la versión del paquete, pero ANTES de confirmar.
+postversion: Ejecute DESPUÉS de encontrarse con la versión del paquete, y DESPUÉS de confirmar.
+pretest, test, posttest: Ejecutado por el comando de prueba npm.
+prestop, stop, poststop: Ejecutado por el comando npm stop.
+prestart, start, poststart: Ejecutado por el comando de inicio npm.
+prerestart, restart, postrestart: Ejecutado por el comando npm restart. Nota: npm restart ejecutará los scripts de stop y start si no se proporciona un script de restart
+preshrinkwrap, shrinkwrap, postshrinkwrap: Ejecutado por el comando shrinkwrap npm.
 ```
 
 #### Ejercicio:
@@ -250,7 +250,7 @@ asciify('IS_ ICO!', {color: 'green'}, function (err, result) {
 
     ```
 
-  - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de de colores.
+  - Ejecuta ```npm install```  y   ``` npm start ```para observar una animación de colores.
 
 ## Otros comandos NPM
 
