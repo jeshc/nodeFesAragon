@@ -1,0 +1,19 @@
+{
+  "name": "mongoose0",
+  "version": "0.0.1",
+  "description": "Conexión a Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "mongoose",
+    "node"
+  ],
+  "author": "jeshc",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.5.5"
+  }
+}
