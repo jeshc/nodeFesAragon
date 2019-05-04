@@ -1,5 +1,5 @@
 # Consola Node Js
-Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la instalación del cliente ```git ```. Accedemos al ambiente virtual REPL(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecución de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El codigo ejecutado en el REPL se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ```
+Usar una consola Linux, si estas usando Windows, emplea la consola ``` Git Bash ``` que proporciona la instalación del cliente ```git ```. Accedemos al ambiente virtual REPL(read–eval–print–loop) tipo python, ruby. Es un entorno sobre el shell de comandos para la ejecución de código javascript soporta un tipo simplificado de Emacs con un conjunto pequeño de comandos. El código ejecutado en el REPL se comportara de la misma forma que ejecutarlo directamente desde un archivo con extensión js ```node archivo.js ```
 
 ```Admite un estilo simplificado de Emacs de edición de lineas y un pequeño conjunto de comandos básicos. Lo que escriba en REPL no se procesa de manera diferentemente como si hubieras escrito en JavaScript en un archivo y ejecutar el archivo utilizando Node. Puedes actualmente usar REPL para codificar tu aplicación entera literalmente probando la aplicación en el transcurso. ```
 <br>
@@ -209,13 +209,13 @@ frutas.concat(otrasFrutas);
 ![Screenshot](image17.PNG)
 
 
- **slice(starts, ends)** .- Regresa un segmento del arreglo, incluye el inicio pero no el elemento end.
+ **slice(starts, ends)** .- Regresa un segmento del arreglo, incluye el inicio pero no el elemento final.
 
 
 
 ![Screenshot](image18.PNG)
 
- *continua...*
+ *continúa...*
 
 ## Notación JSON
 JSON es el acrónimo de JavaScript Object Notation, Notación de objetos JavaScript. Es un lenguaje de datos independiente del lenguaje de programación.
@@ -287,13 +287,13 @@ Los siguientes dos conceptos "JSON.stringify" y "JSON.parse" fueron obtenidos de
 
 24.5.2 JSON.stringify ( value [ , replacer [ , space ] ] )
 <br>
-La función stringify devuelve un String en formato JSON codificado en UTF-16 representando un valor ECMAScript. Puede tomar tres parámetros. El valor de parámetro es un valor ECMAScript, suele ser un objeto o arreglo, sin embargo puede ser un String, Boolean, Number o null. El parámetro de remplazo opcional es una función que altera la forma en que los objetos y arreglos se forman en cadenas, o un arreglo de Strings y Números que actúa como una lista de inclusión para seleccionar las propiedades del objeto que se va clasificar. El parámetro opcional es un String o Número que permite al resultado tener un espacio en blanco inyectado en el para mejorar la legibilidad humana.
+La función stringify devuelve un String en formato JSON codificado en UTF-16 representando un valor ECMAScript. Puede tomar tres parámetros. El valor de parámetro es un valor ECMAScript, suele ser un objeto o arreglo, sin embargo puede ser un String, Boolean, Number o null. El parámetro de reemplazo opcional es una función que altera la forma en que los objetos y arreglos se forman en cadenas, o un arreglo de Strings y Números que actúa como una lista de inclusión para seleccionar las propiedades del objeto que se va clasificar. El parámetro opcional es un String o Número que permite al resultado tener un espacio en blanco inyectado en el para mejorar la legibilidad humana.
 
 ![Screenshot](image20.PNG)
 
 24.5.1 JSON.parse ( text [ , reviver ] )
 <br>
-La función de análisis analiza un texto JSON (Un String en formato JSON) y produce un un valor ECMAScript. El formato JSON representa literales, arreglos, y objetos con una sintaxis similara a la sintaxis de los literales ECMAScript, inicializadores de arreglos, y inicializadores de objetos. Después de analizar, los objetos JSON se realizan como objetos ECMAScript. Los arreglos JSON se realizan como instancias de arreglo ECMAScript. Las cadenas JSON, números, booleans, y null se realizan como cadenas, números, booleans, y null ECMAScript.   
+La función de análisis analiza un texto JSON (Un String en formato JSON) y produce un un valor ECMAScript. El formato JSON representa literales, arreglos, y objetos con una sintaxis similar a la sintaxis de los literales ECMAScript, inicializadores de arreglos, y inicializadores de objetos. Después de analizar, los objetos JSON se realizan como objetos ECMAScript. Los arreglos JSON se realizan como instancias de arreglo ECMAScript. Las cadenas JSON, números, booleans, y null se realizan como cadenas, números, booleans, y null ECMAScript.   
 
 ![Screenshot](image21.PNG)
 
