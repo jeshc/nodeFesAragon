@@ -83,7 +83,7 @@ d.y = "Duplicando el numero";
 Al ser consideradas como objetos, las funciones pueden ser enviadas como argumento en la llamada a otras funciones.
 
 ## Uso de funciones cómo argumentos  a otras funciones.
-Una de las características mas relevante de javascript es el paso de funciones como argumento, además esta característica forma parte de la ejecución asíncrona de nodejs, como se verá mas adelante.
+Una de las características más relevante de javascript es el paso de funciones como argumento, además esta característica forma parte de la ejecución asíncrona de nodejs, como se verá más adelante.
 
 
 
@@ -123,8 +123,8 @@ procesar(10, incrementa);
 
 ```
 
-5. Carga al REPL el archivo comoParam2.js, el cual es una modificación al ejemplo anterior, se agragó la función ```duplicar ```.
-Una vez cargado, manda a llamr las funciones mandando los argumentos que se observan en la imagen.
+5. Carga al REPL el archivo comoParam2.js, el cual es una modificación al ejemplo anterior, se agregó la función ```duplicar ```.
+Una vez cargado, llama a las funciones mandando los argumentos que se observan en la imagen.
 
 ![Screenshot](image5.PNG)
 
@@ -144,7 +144,7 @@ return funcion(x,y);
 
 ![Screenshot](image6.PNG)
 
-7.- Carga al REPL el archivo comoParam4.js y realiza las llamadas a la función calculadora y envía como argumento las funciones suma o resta.
+7.- Carga al REPL el archivo comoParam4.js, realiza las llamadas a la función calculadora y envía como argumento las funciones suma o resta.
 
 ![Screenshot](image7.PNG)
 
@@ -170,7 +170,7 @@ calculadora(10,20,function (x,y) {
 
 ```
 
-8. Pruebala en el REPL.
+8. Pruébala en el REPL.
 
 ![Screenshot](image8.PNG)
 
