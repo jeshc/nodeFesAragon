@@ -1,5 +1,5 @@
 ## Node es Asíncrono
-Al ser Node.js una tecnología del lado del servidor, es necesario que los tiempos de respuesta de las llamadas a los recursos web sean eficientes, es por eso que las llamadas a Node.js son asíncronas. Es decir que una vez una función es invocada, Node.js no espera a que la ejecución termine para ejecutar la siguiente instrucción, en su lugar se mete la ejecución de la función a una pila de ejecución y cuando esta finalice, saca la función de la pila y continua su ejecución, a esto se le llama callback como en la figura 3-2.
+Al ser Node.js una tecnología del lado del servidor, es necesario que los tiempos de respuesta de las llamadas a los recursos web sean eficientes, es por eso que las llamadas a Node.js son asíncronas. Es decir, una vez que la función es invocada, Node.js no espera a que la ejecución termine para ejecutar la siguiente instrucción, en su lugar se mete la ejecución de la función a una pila de ejecución y cuando esta finalice, saca la función de la pila y continua su ejecución, a esto se le llama callback como en la figura 3-2.
 
 En la siguiente gráfica se representa la diferencia entre una llamada Síncrona y Asíncrona.
 
