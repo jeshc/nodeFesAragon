@@ -170,7 +170,7 @@ calculadora(10,20,function (x,y) {
 
 ```
 
-8. Pruebala en el REPL.
+8. Pruébala en el REPL.
 
 ![Screenshot](image8.PNG)
 
