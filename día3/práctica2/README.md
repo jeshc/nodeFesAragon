@@ -41,7 +41,7 @@ Donde la parte derecha de ``` nombre ``` es un documento embebido.
 
 ## Colecciones
 Al conjunto de documentos BSON, MongoDB le asigna el nombre(concepto) de Colección; una colección a su vez es almacenada en una base de datos ```db ```.
-Al momento de insertar un documento, si no existe la colección, mongo la crea. Tambien en tiepo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le dá alto rendimiento. Sin embargo se delega al programados establecer integridad y consistencia vía código fuente.s
+Al momento de insertar un documento, si no existe la colección, mongo la crea. Tambien en tiepo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le dá alto rendimiento. Sin embargo se delega al programados establecer integridad y consistencia vía código fuente.
 
 
 ### Tipos de datos Mongo
@@ -72,32 +72,36 @@ https://docs.mongodb.com/manual/crud/
   ### Create
 
   #### insertOne()
-  Inserta solamente un documento:
-      ```
+  Inserta solamente un documento, el siguiente código inserta un documento a la coleccion contactos.
+
+  ```
       db.contactos.insertOne(
       {
       "nombre":"Juan",
       "Telefono":"55-2424-3535"
       }
       )
-      ```
+  ```
 
   #### insertMany()
   Inserta varios documentos que le son enviados en un arreglo.
+
   ```
-  db.contactos.insertMany(
-  [ {
-  "nombre":"Juan",
-  "Telefono":"55-2424-3535"
-  },{
-  "nombre":"Juan",
-  "Telefono":"55-2424-3535"
-  } ]
-  )
+    db.contactos.insertMany(
+    [ {
+    "nombre":"Juan",
+    "Telefono":"55-2424-3535"
+    },{
+    "nombre":"Pedro",
+    "Telefono":"55-2424-6677"
+    } ]
+    )
   ```
 
   ### Read
-    #### find()
+  ```find``` es la función equivalente a un ```SELECT ``` en SQL.
+  #### find()
+
     #### findOne()
   ### Update
     #### update()
