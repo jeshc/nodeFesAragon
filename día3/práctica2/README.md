@@ -1,7 +1,9 @@
 # MongoDB
 MongoDb es una base de datos no relacional, lo cuál significa que emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
 
-En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, es decir, para Mongo lo siguiente es un documento:
+En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**, ademas de tener una representación binaria, tiene más tipos de datos que el tradicioanl JSON.
+
+Para Mongo lo siguiente es un documento:
 
 
 ```
@@ -37,6 +39,9 @@ Mongo tambien maneja el concepto *documento embebido*, para explicarlo tenemos e
 ```
 Donde la parte derecha de ``` nombre ``` es un documento embebido.
 
+## Colecciones
+Al conjunto de documentos BSON, MongoDB le asigna el nombre(concepto) de Colección; una colección a su vez es almacenada en una base de datos ```db ```.
+Al momento de insertar un documento, si no existe la colección, mongo la crea. Tambien en tiepo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le dá alto rendimiento. Sin embargo se delega al programados establecer integridad y consistencia vía código fuente.s
 
 
 ### Tipos de datos Mongo
@@ -78,7 +83,18 @@ https://docs.mongodb.com/manual/crud/
       ```
 
   #### insertMany()
-  Inserta varios
+  Inserta varios documentos que le son enviados en un arreglo.
+  ```
+  db.contactos.insertMany(
+  [ {
+  "nombre":"Juan",
+  "Telefono":"55-2424-3535"
+  },{
+  "nombre":"Juan",
+  "Telefono":"55-2424-3535"
+  } ]
+  )
+  ```
 
   ### Read
     #### find()
