@@ -1,7 +1,8 @@
 # MongoDB
-MongoDb es una base de datos no relacional, lo cuál significa que no sigues las reglas
+MongoDb es una base de datos no relacional, lo cuál significa que emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
 
 En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, es decir, para Mongo lo siguiente es un documento:
+
 
 ```
 {"nombre":"Juan"}
@@ -60,15 +61,24 @@ Pero tambien se puede asignar  a algún valor de forma explicita ``` {"x" : Obje
 https://docs.mongodb.com/manual/introduction/
 
 ## Operaciones basicas CRUD
-asdasd
+Las Operaciones basicas de manipulación de dats en mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
+
+https://docs.mongodb.com/manual/crud/
   ### Create
-  asdasdsa
 
-    #### insertOne
-    asdasdsa
+  #### insertOne()
+  Inserta solamente un documento:
+      ```
+      db.contactos.insertOne(
+      {
+      "nombre":"Juan",
+      "Telefono":"55-2424-3535"
+      }
+      )
+      ```
 
-    #### insertMany()
-    asdsad
+  #### insertMany()
+  Inserta varios
 
   ### Read
     #### find()
