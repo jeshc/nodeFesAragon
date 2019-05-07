@@ -1,17 +1,18 @@
-# paquete http de node.js
-http es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
+# paquete http de Node.js
 
-A continuación se exploran las caracterisitcas base de este módulo a traves de  un proyecto, en diversas versiones, las cuales van desde ```serverhttp0``` hasta el proyecto ```serverhttpN```. Mismos que van desde e servidor web mas simple , hasta el procesamiento de rutas http y servir archivos estáticos.
+```http``` es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
 
-```http ``` forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. Http es un módulo que habilita acceso a internet a tu programa.
+A continuación se exploran las caracterisitcas base de este módulo a traves de  un proyecto, en diversas versiones, las cuales van desde ```serverhttp0``` hasta el proyecto ```serverhttpN```. Mismos que van desde el servidor web más simple , hasta el procesamiento de rutas ```http``` y servir archivos estáticos.
 
-Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos http.ServerRequest que representa la petición al servidor y un objeto que representa la repuesta que se le dará al cliente.
+```http``` forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. ```Http``` es un módulo que habilita acceso a internet a tu programa.
 
-request recibe la información de la peticion de la página http tales como información de un formulario, verbo de la petidion (GET, POST) y el cuerpo de la petición (si es el caso).
+Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos ```http.ServerRequest``` que representa la petición al servidor y un ```objeto``` que representa la repuesta que se le dará al cliente.
 
-response, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
+```request``` recibe la información de la petición de la página ```http``` tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
 
-El siguiente código corresponde a la versión minima de un servidor web, sin embargo este código en particular aun no envía respuesta.
+```response```, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
+
+El siguiente código corresponde a la versión minima de un servidor web, sin embargo este código en particular aún no envía respuesta.
 
 ```
 var Http = require('http');
@@ -20,14 +21,12 @@ var server = Http.createServer();
 server.listen(3000, function() {
   console.log('Escuchando conexión en el puerto 3000');
 });
-
-
 ```
 
 #### serverhttp0
 
 
-1. Ingresa a la carpeta ```serverhttp0 ``` instala el proyecto con ```nom install ```y ejecuta  con ``` npm start ```.
+1. Ingresa a la carpeta ```serverhttp0 ``` instala el proyecto con ```npm install``` y ejecuta  con ``` npm start ```.
 
   ![Screenshot](image0_1.PNG)
 
@@ -36,9 +35,9 @@ server.listen(3000, function() {
   ![Screenshot](image0_2.PNG)
 
 
-  En el siguiente código se agrega ka función anónima antes mencionada.
+  En el siguiente código se agrega la función anónima antes mencionada.
 
-3. Antes de abrir la versión ``` serverhttp1 ```   del proyecto, codifica ``` seerverhttp0 ```  para que sea igual a lo siguiente:
+3. Antes de abrir la versión ``` serverhttp1 ```   del proyecto, codifica ``` serverhttp0 ```  para que sea igual a lo siguiente:
 
 
 
@@ -53,16 +52,15 @@ server.listen(3000, function() {
   server.listen( 3000, function( ) {
     console.log( 'Escuchando conexión en el puerto 3000' );
   });
+```
 
- ```
-
-3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguietne imagen cada vez que ingresemos vía el web browser.
+3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguiente imagen cada vez que ingresemos vía el web browser.
 
 ![Screenshot](image1.PNG)
 
-Nota.- La función recien agregada, es una función callback que se ejecuta de forma asíncrona.
+**Nota.-** La función recien agregada, es una función ```callback``` que se ejecuta de forma asíncrona.
 
-Cómo se puede observar la función requestListener responde con un  ```console.log('Alguien entró') ``` cada vez que un usario ingresa a la dirección web del servidor en el puerto 3000.
+Cómo se puede observar la función ```requestListener``` responde con un  ```console.log('Alguien entró') ``` cada vez que un usario ingresa a la dirección web del servidor en el puerto 3000.
 
 Al igual que el ejercicio anterior el web browser se queda en espera de la respuesta, debido a que no hemos escrito nada de el objeto ```request ```, avancemos y agreguemos una respuesta.
 
@@ -79,10 +77,9 @@ var server = Http.createServer(function(request,response){
 server.listen( 3000, function( ) {
 console.log( 'Escuchando conexión en el puerto 3000' );
 });
-
 ```
 
-Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función * end* de la forma``` response.end() ```.
+Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función ***end*** de la forma ``` response.end() ```.
 
 #### serverhttp3
 
@@ -104,25 +101,24 @@ console.log( 'Escuchando conexión en el puerto 3000' );
 ```
 
 Las modificaciones consisten en:
-  - establecer la cabecera de respuesta: ``` response.writeHead(200, {'Content-Type': 'text/html'}); ``` lo cual le indica al servidor el código http de respuesta. Los códigos de respuesta HTTP se pueden consultar aquí:https://developer.mozilla.org/en-US/docs/Web/HTTP/Status y las cabeceras Aquí: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html.
-  - En este caso se establece que el contendido de la respuesta es texto html, documentación de tos tipos de ``` content-type ``` las puedes consultar aquí: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
-  -  Escribimos una respuesta en lenguaje HTML de la forma: ``` response.write("<h1>Hola desde el node 3</h1>");  ```. Este texto al ser recibido por el cliente Browser se interpreta y renderiza.
-  - Se invoca a la función end() Lo que provoca que se de por terminada la respuesta y se envíe la respuesta el cliente Web Browser.
+  - Establecer la cabecera de respuesta: ``` response.writeHead(200, {'Content-Type': 'text/html'}); ``` lo cual le indica al servidor el código ```http``` de respuesta. Los códigos de respuesta ```HTTP``` se pueden consultar [Aquí.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) y las cabeceras [Aquí.](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+  - En este caso se establece que el contendido de la respuesta es texto ***html***, documentación de los tipos de ``` content-type ``` las puedes consultar [Aquí](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+  -  Escribimos una respuesta en lenguaje ***HTML*** de la forma: ``` response.write("<h1>Hola desde el node 3</h1>");  ```. Este texto al ser recibido por el cliente Browser se interpreta y renderiza.
+  - Se invoca a la función **end()** Lo que provoca que se da por terminada la respuesta y se envíe la respuesta al cliente Web Browser.
   - El resultado es:
 
-4.- Ejecuta el programa ''' serverhttp3 ``` y observa el resultado:
+4.- Ejecuta el programa ```serverhttp3 ``` y observa el resultado:
 
-![Screenshot](image3.PNG)
+![Screenshot](image3.png)
 
 ## Al fin, ya tenemos nuestro primer servidor web con Node.js
 
-5. **Ejercicio.- **
+5. **Ejercicio.-**
   - Imprime en la consola el contenido del objeto request ``` console.log(request) ``` .
   - Examina la sección headers y url de la misma.
   - Examina la sección ``` METHOD ```
   - Ahora, imprime solamente el  contenido de **request.url**
   - Ahora, imprime solamente el  contenido de **request.headers**
-
 
 ![Screenshot](image3_1.PNG)
 
@@ -158,7 +154,7 @@ Al ingresar al servidor, el resultado esperado es el siguiente:
 
 #### serverhttp5
 
-En el serverhttp5 serviremos el mismo contenido, ahora desde un archivo. Para ello empleamos el paquete ``` fs ```.
+En el ```serverhttp5``` serviremos el mismo contenido, ahora desde un archivo. Para ello empleamos el paquete ``` fs ```.
 
 ```
 var Http = require('http');
@@ -192,20 +188,27 @@ Dando como resultado esto:
 #### serverhttp6
 
 6. **Ejercicio**
- - Modificar el archivo html y agregar el CDN del framework CSS de materialize.
+ - Modificar el archivo ```html``` y agregar el CDN del framework CSS de materialize.
  - Agregar el ejemplo html cards: https://materializecss.com/cards.html.
  - El resultado esperado es este:
 
  ![Screenshot](image6.PNG)
 
 
- ## Que es una URL ?
-Pendiente
+ ## ¿Qué es una URL ?
+Uniform Resource Locator (Localizador uniforme de recursos). Los recursos que existen en Internet.
+En el caso de una página wed, la estructura de la URL la podemos ver con el siguiente ejemplo:
+http://aragonapi.herokuapp.com
+* http: Es un protocolo de seguridad, Google solo quiere https, el http no se recomienda.
+
+* www: subdominio (Las 3w pueden aparecer o no, según lo hayas determinado)
+* aragonapi.herokuapp: Nombre del dominio
+* .com: Extensión o TLD
 ## Parsing de URL´s
 
 Dentro del desarollo web es necesario saber en el back end cual es el recurso que solicita el cliente, junto con los valores enviados por el mismo. Es por eso que cómo parte de la API core de node.js existe un paquete llamado ```url ```. Este módulo nos permite extraer la información de la URL del cliente, la cual viene enpaquetada en el cuerpo de la petición ``` request ```.
 
-La siguiente es la documentación de como Node.js (https://nodejs.org/api/url.html) nombra a las partes de una URL.
+La [siguiente](https://nodejs.org/api/url.html) es la documentación de como Node.js nombra a las partes de una URL.
 
 ```
 
@@ -262,7 +265,7 @@ El resultado es el siguiente:
 
 ![Screenshot](image7_2.PNG)
 
-7. ** Ejercicio ** Modifica el código del proyecto serverhttp7 para que:
+7. **Ejercicio:** Modifica el código del proyecto ```serverhttp7``` para que:
  - Cuando se solicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
  - Cuando se solicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
  - Cuando se solicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
@@ -271,7 +274,7 @@ El resultado es el siguiente:
 
 #### serverhttp8
 
-8. **Ejerccio** Módifica el proyecto serverhttp8 para que:
+8. **Ejercicio:** Módifica el proyecto ```serverhttp8``` para que:
  - Cuando se solicite el path ``` /hola ``` y el METHOD=GET, responda con el contenido JSON:
     ``` {"metodo":"GET" , "mensaje":"Hola"} ```
  - Cuando se solicite el path ``` /hola ``` y el METHOD=POST, responda con el contenido JSON:
@@ -285,4 +288,4 @@ El resultado es el siguiente:
  - Cuando se solicite el path ``` /adios ``` y el METHOD=PATCH, responda con el contenido JSON:
        ``` {"metodo":"PATCH" , "mensaje":"Ciao", "accion":"Actualizar en bd"} ```
 
-*NOTA*.- Se requiere modificar la cabecera ``` Content-Type ```
+***NOTA.-*** Se requiere modificar la cabecera ``` Content-Type ```
