@@ -195,8 +195,14 @@ Dando como resultado esto:
  ![Screenshot](image6.PNG)
 
 
- ## Que es una URL ?
-Pendiente
+ ## ¿Qué es una URL ?
+Uniform Resource Locator (Localizador uniforme de recursos). Los recursos que existen en Internet.
+En el caso de una página wed, la estructura de la URL la podemos ver con el siguiente ejemplo:
+http://aragonapi.herokuapp.com
+- http: Es un protocolo de seguridad, Google solo quiere https, el http no se recomienda.
+-www: subdominio (Las 3w pueden aparecer o no, según lo hayas determinado)
+-aragonapi.herokuapp: Nombre del dominio
+-.com: Extensión o TLD
 ## Parsing de URL´s
 
 Dentro del desarollo web es necesario saber en el back end cual es el recurso que solicita el cliente, junto con los valores enviados por el mismo. Es por eso que cómo parte de la API core de node.js existe un paquete llamado ```url ```. Este módulo nos permite extraer la información de la URL del cliente, la cual viene enpaquetada en el cuerpo de la petición ``` request ```.
