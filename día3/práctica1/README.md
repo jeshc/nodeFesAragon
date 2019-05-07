@@ -1,5 +1,5 @@
 # paquete http de Node.js
-http es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
+ ```http``` es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
 
 A continuación se exploran las caracterisitcas base de este módulo a traves de  un proyecto, en diversas versiones, las cuales van desde ```serverhttp0``` hasta el proyecto ```serverhttpN```. Mismos que van desde el servidor web más simple , hasta el procesamiento de rutas ```http``` y servir archivos estáticos.
 
