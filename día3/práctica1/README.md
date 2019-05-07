@@ -1,28 +1,16 @@
 # paquete http de Node.js
 
-```
-http
-```
-es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
+```http``` es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
 
 A continuación se exploran las caracterisitcas base de este módulo a traves de  un proyecto, en diversas versiones, las cuales van desde ```serverhttp0``` hasta el proyecto ```serverhttpN```. Mismos que van desde el servidor web más simple , hasta el procesamiento de rutas ```http``` y servir archivos estáticos.
 
-```
-http
-```
-forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. ```Http``` es un módulo que habilita acceso a internet a tu programa.
+```http``` forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. ```Http``` es un módulo que habilita acceso a internet a tu programa.
 
 Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos ```http.ServerRequest``` que representa la petición al servidor y un ```objeto``` que representa la repuesta que se le dará al cliente.
 
-```
-request
-```
-recibe la información de la petición de la página ```http``` tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
+```request``` recibe la información de la petición de la página ´´´http´´´ tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
 
-```
-response
-```
-, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
+```response```, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
 
 El siguiente código corresponde a la versión minima de un servidor web, sin embargo este código en particular aún no envía respuesta.
 
