@@ -154,7 +154,7 @@ Al ingresar al servidor, el resultado esperado es el siguiente:
 
 #### serverhttp5
 
-En el serverhttp5 serviremos el mismo contenido, ahora desde un archivo. Para ello empleamos el paquete ``` fs ```.
+En el ```serverhttp5``` serviremos el mismo contenido, ahora desde un archivo. Para ello empleamos el paquete ``` fs ```.
 
 ```
 var Http = require('http');
@@ -188,7 +188,7 @@ Dando como resultado esto:
 #### serverhttp6
 
 6. **Ejercicio**
- - Modificar el archivo html y agregar el CDN del framework CSS de materialize.
+ - Modificar el archivo ```html``` y agregar el CDN del framework CSS de materialize.
  - Agregar el ejemplo html cards: https://materializecss.com/cards.html.
  - El resultado esperado es este:
 
@@ -258,7 +258,7 @@ El resultado es el siguiente:
 
 ![Screenshot](image7_2.PNG)
 
-7. ** Ejercicio ** Modifica el código del proyecto serverhttp7 para que:
+7. **Ejercicio:** Modifica el código del proyecto serverhttp7 para que:
  - Cuando se solicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
  - Cuando se solicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
  - Cuando se solicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
@@ -267,7 +267,7 @@ El resultado es el siguiente:
 
 #### serverhttp8
 
-8. **Ejerccio** Módifica el proyecto serverhttp8 para que:
+8. **Ejercicio:** Módifica el proyecto serverhttp8 para que:
  - Cuando se solicite el path ``` /hola ``` y el METHOD=GET, responda con el contenido JSON:
     ``` {"metodo":"GET" , "mensaje":"Hola"} ```
  - Cuando se solicite el path ``` /hola ``` y el METHOD=POST, responda con el contenido JSON:
@@ -281,4 +281,4 @@ El resultado es el siguiente:
  - Cuando se solicite el path ``` /adios ``` y el METHOD=PATCH, responda con el contenido JSON:
        ``` {"metodo":"PATCH" , "mensaje":"Ciao", "accion":"Actualizar en bd"} ```
 
-*NOTA*.- Se requiere modificar la cabecera ``` Content-Type ```
+***NOTA.-*** Se requiere modificar la cabecera ``` Content-Type ```
