@@ -113,14 +113,14 @@ Las modificaciones consisten en:
 
 ## Al fin, ya tenemos nuestro primer servidor web con Node.js
 
-5. **Ejercicio.- **
+5. **Ejercicio.-**
   - Imprime en la consola el contenido del objeto request ``` console.log(request) ``` .
   - Examina la sección headers y url de la misma.
   - Examina la sección ``` METHOD ```
   - Ahora, imprime solamente el  contenido de **request.url**
   - Ahora, imprime solamente el  contenido de **request.headers**
 
-![Screenshot](image3_1.png)
+![Screenshot](image3_1.PNG)
 
 
 #### serverhttp4
