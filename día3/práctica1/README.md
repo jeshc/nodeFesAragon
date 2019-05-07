@@ -8,7 +8,7 @@ A continuación se exploran las caracterisitcas base de este módulo a traves de
 
 Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos ```http.ServerRequest``` que representa la petición al servidor y un ```objeto``` que representa la repuesta que se le dará al cliente.
 
-```request``` recibe la información de la petición de la página ´´´http´´´ tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
+```request``` recibe la información de la petición de la página ```http``` tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
 
 ```response```, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
 
@@ -37,7 +37,7 @@ server.listen(3000, function() {
 
   En el siguiente código se agrega la función anónima antes mencionada.
 
-3. Antes de abrir la versión ``` serverhttp1 ```   del proyecto, codifica ``` seerverhttp0 ```  para que sea igual a lo siguiente:
+3. Antes de abrir la versión ``` serverhttp1 ```   del proyecto, codifica ``` serverhttp0 ```  para que sea igual a lo siguiente:
 
 
 
@@ -52,7 +52,8 @@ server.listen(3000, function() {
   server.listen( 3000, function( ) {
     console.log( 'Escuchando conexión en el puerto 3000' );
   });
- ```
+```
+```
 
 3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguiente imagen cada vez que ingresemos vía el web browser.
 
@@ -107,7 +108,7 @@ Las modificaciones consisten en:
   - Se invoca a la función end() Lo que provoca que se de por terminada la respuesta y se envíe la respuesta el cliente Web Browser.
   - El resultado es:
 
-4.- Ejecuta el programa ''' serverhttp3 ``` y observa el resultado:
+4.- Ejecuta el programa ```serverhttp3 ``` y observa el resultado:
 
 ![Screenshot](image3.PNG)
 
