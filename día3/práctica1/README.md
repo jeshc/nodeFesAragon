@@ -53,8 +53,6 @@ server.listen(3000, function() {
     console.log( 'Escuchando conexión en el puerto 3000' );
   });
 ```
-```
-
 3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguiente imagen cada vez que ingresemos vía el web browser.
 
 ![Screenshot](image1.PNG)
@@ -113,14 +111,13 @@ Las modificaciones consisten en:
 ![Screenshot](image3.PNG)
 
 ## Al fin, ya tenemos nuestro primer servidor web con Node.js
-
+```
 5. **Ejercicio.- **
   - Imprime en la consola el contenido del objeto request ``` console.log(request) ``` .
   - Examina la sección headers y url de la misma.
   - Examina la sección ``` METHOD ```
   - Ahora, imprime solamente el  contenido de **request.url**
   - Ahora, imprime solamente el  contenido de **request.headers**
-
 
 ![Screenshot](image3_1.PNG)
 
