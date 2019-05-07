@@ -53,11 +53,12 @@ server.listen(3000, function() {
     console.log( 'Escuchando conexión en el puerto 3000' );
   });
 ```
+
 3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguiente imagen cada vez que ingresemos vía el web browser.
 
 ![Screenshot](image1.PNG)
 
-Nota.- La función recien agregada, es una función ```callback``` que se ejecuta de forma asíncrona.
+**Nota.-** La función recien agregada, es una función ```callback``` que se ejecuta de forma asíncrona.
 
 Cómo se puede observar la función ```requestListener``` responde con un  ```console.log('Alguien entró') ``` cada vez que un usario ingresa a la dirección web del servidor en el puerto 3000.
 
@@ -78,7 +79,7 @@ console.log( 'Escuchando conexión en el puerto 3000' );
 });
 ```
 
-Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función **end** de la forma ``` response.end() ```.
+Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función ***end*** de la forma ``` response.end() ```.
 
 #### serverhttp3
 
