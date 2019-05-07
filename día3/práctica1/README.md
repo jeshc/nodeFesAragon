@@ -265,7 +265,7 @@ El resultado es el siguiente:
 
 ![Screenshot](image7_2.PNG)
 
-7. **Ejercicio:** Modifica el código del proyecto serverhttp7 para que:
+7. **Ejercicio:** Modifica el código del proyecto ```serverhttp7``` para que:
  - Cuando se solicite el path ``` /hola ``` se responda con una página HTML con un saludo en texto verde.
  - Cuando se solicite el path ``` /adios ``` se responda con una página HTML con un texto de despedida en color azul.
  - Cuando se solicite el path ``` /card ``` se responda con una página HTML con una card de Materialize.
@@ -274,7 +274,7 @@ El resultado es el siguiente:
 
 #### serverhttp8
 
-8. **Ejercicio:** Módifica el proyecto serverhttp8 para que:
+8. **Ejercicio:** Módifica el proyecto ```serverhttp8``` para que:
  - Cuando se solicite el path ``` /hola ``` y el METHOD=GET, responda con el contenido JSON:
     ``` {"metodo":"GET" , "mensaje":"Hola"} ```
  - Cuando se solicite el path ``` /hola ``` y el METHOD=POST, responda con el contenido JSON:
