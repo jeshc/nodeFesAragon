@@ -208,7 +208,7 @@ http://aragonapi.herokuapp.com
 
 Dentro del desarollo web es necesario saber en el back end cual es el recurso que solicita el cliente, junto con los valores enviados por el mismo. Es por eso que cómo parte de la API core de node.js existe un paquete llamado ```url ```. Este módulo nos permite extraer la información de la URL del cliente, la cual viene enpaquetada en el cuerpo de la petición ``` request ```.
 
-La siguiente es la [documentación](https://nodejs.org/api/url.html) de como Node.js nombra a las partes de una URL.
+La [siguiente](https://nodejs.org/api/url.html) es la documentación de como Node.js nombra a las partes de una URL.
 
 ```
 
