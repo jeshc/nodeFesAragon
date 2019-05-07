@@ -1,17 +1,30 @@
 # paquete http de Node.js
- ```http``` es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
+
+```
+http
+```
+es un paquete del core de Node.js que nos permite crear un servidor de páginas web de forma sencilla y es el módulo base para la construcción del modulo express, el  objetivo de este curso.
 
 A continuación se exploran las caracterisitcas base de este módulo a traves de  un proyecto, en diversas versiones, las cuales van desde ```serverhttp0``` hasta el proyecto ```serverhttpN```. Mismos que van desde el servidor web más simple , hasta el procesamiento de rutas ```http``` y servir archivos estáticos.
 
-```http``` forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. Http es un módulo que habilita acceso a internet a tu programa.
+```
+http
+```
+forma parte del núcleo de Node.js y como tal no tiene una versión especifica, ya que se administra con la versión general de Node.js. ```Http``` es un módulo que habilita acceso a internet a tu programa.
 
-Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos http.ServerRequest que representa la petición al servidor y un objeto que representa la repuesta que se le dará al cliente.
+Su principal funcion es ``` createServer() ```  la cuál recibe como argumento una función anónima que precesará las peticiones, pero además se quedará a la escucha de forma continua. A esta función se le conoce como la funcion ```requestListener ```. Ahora, esta funcion recibe dos objetos ```http.ServerRequest``` que representa la petición al servidor y un ```objeto``` que representa la repuesta que se le dará al cliente.
 
-request recibe la información de la peticion de la página http tales como información de un formulario, verbo de la petidion (GET, POST) y el cuerpo de la petición (si es el caso).
+```
+request
+```
+recibe la información de la petición de la página ```http``` tales cómo información de un formulario, verbo de la petición (GET, POST) y el cuerpo de la petición (si es el caso).
 
-response, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
+```
+response
+```
+, es el objeto en donde se debe escribir la respuesta para mandarla al programa cliente(Chrome por ejemplo).
 
-El siguiente código corresponde a la versión minima de un servidor web, sin embargo este código en particular aun no envía respuesta.
+El siguiente código corresponde a la versión minima de un servidor web, sin embargo este código en particular aún no envía respuesta.
 
 ```
 var Http = require('http');
@@ -20,14 +33,12 @@ var server = Http.createServer();
 server.listen(3000, function() {
   console.log('Escuchando conexión en el puerto 3000');
 });
-
-
 ```
 
 #### serverhttp0
 
 
-1. Ingresa a la carpeta ```serverhttp0 ``` instala el proyecto con ```nom install ```y ejecuta  con ``` npm start ```.
+1. Ingresa a la carpeta ```serverhttp0 ``` instala el proyecto con ```npm install``` y ejecuta  con ``` npm start ```.
 
   ![Screenshot](image0_1.PNG)
 
@@ -36,7 +47,7 @@ server.listen(3000, function() {
   ![Screenshot](image0_2.PNG)
 
 
-  En el siguiente código se agrega ka función anónima antes mencionada.
+  En el siguiente código se agrega la función anónima antes mencionada.
 
 3. Antes de abrir la versión ``` serverhttp1 ```   del proyecto, codifica ``` seerverhttp0 ```  para que sea igual a lo siguiente:
 
@@ -53,16 +64,15 @@ server.listen(3000, function() {
   server.listen( 3000, function( ) {
     console.log( 'Escuchando conexión en el puerto 3000' );
   });
-
  ```
 
-3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguietne imagen cada vez que ingresemos vía el web browser.
+3. Ejecuta nuevamente el proyecto del código ``` serverhttp1 ``` para obtener el resultado de la siguiente imagen cada vez que ingresemos vía el web browser.
 
 ![Screenshot](image1.PNG)
 
-Nota.- La función recien agregada, es una función callback que se ejecuta de forma asíncrona.
+Nota.- La función recien agregada, es una función ```callback``` que se ejecuta de forma asíncrona.
 
-Cómo se puede observar la función requestListener responde con un  ```console.log('Alguien entró') ``` cada vez que un usario ingresa a la dirección web del servidor en el puerto 3000.
+Cómo se puede observar la función ```requestListener``` responde con un  ```console.log('Alguien entró') ``` cada vez que un usario ingresa a la dirección web del servidor en el puerto 3000.
 
 Al igual que el ejercicio anterior el web browser se queda en espera de la respuesta, debido a que no hemos escrito nada de el objeto ```request ```, avancemos y agreguemos una respuesta.
 
@@ -79,10 +89,9 @@ var server = Http.createServer(function(request,response){
 server.listen( 3000, function( ) {
 console.log( 'Escuchando conexión en el puerto 3000' );
 });
-
 ```
 
-Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función * end* de la forma``` response.end() ```.
+Al probar el programa el resultado debe ser el mismo, a pesar que ya se está escribiendo respuesta sobre el objeto ``` response ``` , lo que hace falta es indicar que ya se terminó de escribir sobre el mismo. Esto se logra invocando la función **end** de la forma ``` response.end() ```.
 
 #### serverhttp3
 
