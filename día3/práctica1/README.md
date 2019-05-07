@@ -101,10 +101,10 @@ console.log( 'Escuchando conexión en el puerto 3000' );
 ```
 
 Las modificaciones consisten en:
-  - establecer la cabecera de respuesta: ``` response.writeHead(200, {'Content-Type': 'text/html'}); ``` lo cual le indica al servidor el código http de respuesta. Los códigos de respuesta HTTP se pueden consultar aquí:https://developer.mozilla.org/en-US/docs/Web/HTTP/Status y las cabeceras Aquí: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html.
-  - En este caso se establece que el contendido de la respuesta es texto html, documentación de tos tipos de ``` content-type ``` las puedes consultar aquí: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
-  -  Escribimos una respuesta en lenguaje HTML de la forma: ``` response.write("<h1>Hola desde el node 3</h1>");  ```. Este texto al ser recibido por el cliente Browser se interpreta y renderiza.
-  - Se invoca a la función end() Lo que provoca que se de por terminada la respuesta y se envíe la respuesta el cliente Web Browser.
+  - Establecer la cabecera de respuesta: ``` response.writeHead(200, {'Content-Type': 'text/html'}); ``` lo cual le indica al servidor el código ```http``` de respuesta. Los códigos de respuesta ```HTTP``` se pueden consultar [Aquí.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) y las cabeceras [Aquí.](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+  - En este caso se establece que el contendido de la respuesta es texto ***html***, documentación de los tipos de ``` content-type ``` las puedes consultar [Aquí](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+  -  Escribimos una respuesta en lenguaje ***HTML*** de la forma: ``` response.write("<h1>Hola desde el node 3</h1>");  ```. Este texto al ser recibido por el cliente Browser se interpreta y renderiza.
+  - Se invoca a la función **end()** Lo que provoca que se da por terminada la respuesta y se envíe la respuesta al cliente Web Browser.
   - El resultado es:
 
 4.- Ejecuta el programa ```serverhttp3 ``` y observa el resultado:
