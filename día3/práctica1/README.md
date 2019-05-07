@@ -109,7 +109,7 @@ Las modificaciones consisten en:
 
 4.- Ejecuta el programa ```serverhttp3 ``` y observa el resultado:
 
-![Screenshot](image3.PNG)
+![Screenshot](image3.png)
 
 ## Al fin, ya tenemos nuestro primer servidor web con Node.js
 ```
