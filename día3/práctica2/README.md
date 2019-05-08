@@ -1,7 +1,12 @@
 # MongoDB
+<<<<<<< HEAD
 MongoDb es una base de datos no relacional, lo cuál significa que **NO** emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
 
 En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**. Ademas de tener una representación binaria, tiene más tipos de datos que el tradicional JSON.
+=======
+MongoDB es una base de datos no relacional, lo cuál significa que emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
+En su lugar, Mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**, ademas de tener una representación binaria, tiene más tipos de datos que el tradicional JSON.
+>>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
 
 Para Mongo lo siguiente es un documento:
 
@@ -41,32 +46,37 @@ Donde la parte derecha de ``` nombre ``` es un documento embebido.
 
 ## Colecciones
 Al conjunto de documentos BSON, MongoDB le asigna el nombre(concepto) de Colección; una colección a su vez es almacenada en una base de datos ```db ```.
-Al momento de insertar un documento, si no existe la colección, mongo la crea. Tambien en tiepo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le dá alto rendimiento. Sin embargo se delega al programados establecer integridad y consistencia vía código fuente.s
+Al momento de insertar un documento, si no existe la colección, Mongo la crea. Tambien en tiempo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le da alto rendimiento. Sin embargo se delega al programador establecer integridad y consistencia vía código fuente.
 
 
 ### Tipos de datos Mongo
 **null**.- Se usa para representar nulo o valor inexistente. ``` {"a" : null} ```
 
-**boolean**.- true o flase. ``` {"a" : true} ```
+**boolean**.- true o false. ``` {"a" : true} ```
 
-**number**.- Enteros o punto flotante. ``` {"a" : 1.83} ó{"b" : 22} ```
-Tambíen se puede declarar de la forma ``` {"a" : 1.83} ó{"b" : 22} ``` o ``` {"a" : NumberInt("3")} 4 bytes ó {"b" :  NumberLong("22")} 8 bytes```
+**number**.- Enteros o punto flotante. ``` {"a" : 1.83} ó {"b" : 22} ```
+Tambíen se puede declarar de la forma ``` {"a" : 1.83} ó {"b" : 22} ``` o ``` {"a" : NumberInt("3")} 4 bytes ó {"b" :  NumberLong("22")} 8 bytes```
 
 **array** arreglos de valores o de documentos embebidos. ``` {"a" : ["x", "y", "z"]} ```
 
 **string** Cadena de caracteres UTF-8.
 
-**date** Fechas. {"a":new Date()}
+**date** Fechas. ```{"a":new Date()}```
 
 **regular expression** ``` {"a":/patron/ig} ```
 
-**objectId** Este tipo de dato es empleado por mongo para establecer un valor único a un documento. El objetivo es diferenciar dos documentos cuando  ambos tienen el miso contenido. Agrega el campo **_id** de doce bytes.
+**objectId** Este tipo de dato es empleado por Mongo para establecer un valor único a un documento. El objetivo es diferenciar dos documentos cuando  ambos tienen el mismo contenido. Agrega el campo **_id** de doce bytes.
 Pero tambien se puede asignar  a algún valor de forma explicita ``` {"x" : ObjectId()} ```
 
 https://docs.mongodb.com/manual/introduction/
 
+<<<<<<< HEAD
 ## Operaciones básicas CRUD
 Las Operaciones básicas de manipulación de dats en mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
+=======
+## Operaciones basicas CRUD
+Las Operaciones basicas de manipulación de datos en Mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
+>>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
 
 La documentación básica se encuentra en :
 https://docs.mongodb.com/manual/crud/
@@ -76,7 +86,12 @@ Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en 
   ### Create
 
   #### insertOne()
+<<<<<<< HEAD
   Inserta solamente un documento:
+=======
+  Inserta solamente un documento, el siguiente código inserta un documento a la coleccion contactos.
+
+>>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
   ```
       db.contactos.insertOne(
       {
@@ -89,7 +104,9 @@ Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en 
 
   #### insertMany()
   Inserta varios documentos que le son enviados en un arreglo.
+
   ```
+<<<<<<< HEAD
   db.contactos.insertMany(
   [ {
   "nombre":"Juan",
@@ -165,6 +182,26 @@ db.contactos.update(
 ```
 Resultado:
 ![Screenshot](update.PNG)
+=======
+    db.contactos.insertMany(
+    [ {
+    "nombre":"Juan",
+    "Telefono":"55-2424-3535"
+    },{
+    "nombre":"Pedro",
+    "Telefono":"55-2424-6677"
+    } ]
+    )
+  ```
+
+  ### Read
+  ```find``` es la función equivalente a un ```SELECT ``` en SQL.
+  #### find()
+
+    #### findOne()
+  ### Update
+    #### update()
+>>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
     #### updateMany()
     #### replaceOne()
     #### findOneAndUpdate()
