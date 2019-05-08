@@ -6,5 +6,3 @@ var incrementa = function(numero) {
 var procesar = function(x, laFuncion) {
   return laFuncion(x);
 }
-
-procesar(10, incrementa);

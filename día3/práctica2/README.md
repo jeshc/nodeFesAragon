@@ -1,7 +1,7 @@
 # MongoDB
-MongoDb es una base de datos no relacional, lo cuál significa que emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
+MongoDb es una base de datos no relacional, lo cuál significa que **NO** emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
 
-En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**, ademas de tener una representación binaria, tiene más tipos de datos que el tradicioanl JSON.
+En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**. Ademas de tener una representación binaria, tiene más tipos de datos que el tradicional JSON.
 
 Para Mongo lo siguiente es un documento:
 
@@ -65,22 +65,27 @@ Pero tambien se puede asignar  a algún valor de forma explicita ``` {"x" : Obje
 
 https://docs.mongodb.com/manual/introduction/
 
-## Operaciones basicas CRUD
-Las Operaciones basicas de manipulación de dats en mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
+## Operaciones básicas CRUD
+Las Operaciones básicas de manipulación de dats en mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
 
+La documentación básica se encuentra en :
 https://docs.mongodb.com/manual/crud/
+
+Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en este link: https://docs.mongodb.com/manual/tutorial/query-documents/.
+
   ### Create
 
   #### insertOne()
   Inserta solamente un documento:
-      ```
+  ```
       db.contactos.insertOne(
       {
       "nombre":"Juan",
-      "Telefono":"55-2424-3535"
+      "telefono":"55-2424-3535",
+      "edad":22
       }
       )
-      ```
+  ```
 
   #### insertMany()
   Inserta varios documentos que le son enviados en un arreglo.
@@ -88,21 +93,82 @@ https://docs.mongodb.com/manual/crud/
   db.contactos.insertMany(
   [ {
   "nombre":"Juan",
-  "Telefono":"55-2424-3535"
+  "telefono":"55-2424-3535",
+  "edad":22
   },{
-  "nombre":"Juan",
-  "Telefono":"55-2424-3535"
+  "nombre":"Mario",
+  "Telefono":"55-3422-7766",
+  "edad":25
   } ]
   )
   ```
 
   ### Read
-    #### find()
-    #### findOne()
-  ### Update
-    #### update()
+  #### find()
+  La funcIón ```db.contactos.find()``` regresa todos los documentos dentro de la colección contactos.
+
+  Para hacer lo equivalente a un ``` where nombre="Juan" ``` es como sigue:
+  ```
+  db.contactos.find({
+      "nombre":"Juan"
+    })
+  ```
+Para hacer una consulta equivalente ``` edad > 23 ``` se emplea el operador ```$gt ```:
+```
+db.contactos.find({
+    "edad":{$gt:23}
+  })
+```
+Pendiente: operadores    $lt, $in,  ...
+
+#### findOne()
+La función findOne regresará solamente el primer registro encontrado según los criterios de busqueda. Por ejemplo la siguiente consulta regresa solamente el primer registro con edad mayor de 20.
+```
+db.contactos.findOne({"edad":{$gt:20}});
+
+```
+
+![Screenshot](findOne.PNG)
+
+### Update
+  La sintaxis para hacer un update es la siguiente:
+```
+db.collection.update(
+   <query>,
+   <update>,
+   {
+     upsert: <boolean>,
+     multi: <boolean>,
+     writeConcern: <document>,
+     collation: <document>,
+     arrayFilters: [ <filterdocument1>, ... ]
+   }
+)
+```
+En donde el query es la sección donde se eligen los documentos a modificar. En la sección update se establecen los nuevos valores. y la ultima sección se establecen parametros de la funcion update:
+
+```
+upsert	boolean	Optional. Si es establecido a true, significa que se insertará un nuevo documento si no se encuentra el documento.
+
+multi	boolean   opcional. Si es establecido a true, modifica multiples documentos.
+
+```
+
+#### update()
+Ejemplo, para modificar la edad de Juan a 33 se realiza de la forma:
+```
+db.contactos.update(
+  {"nombre":"Juan"},
+  {"nombre":"Juan","telefono":"55-2424-3535","edad":33},
+  {upsert:true}
+  );
+```
+Resultado:
+![Screenshot](update.PNG)
     #### updateMany()
     #### replaceOne()
+    #### findOneAndUpdate()
+
   ### Delete
     #### deleteOne()
     #### deleteMany()
