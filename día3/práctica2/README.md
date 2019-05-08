@@ -1,12 +1,9 @@
 # MongoDB
-<<<<<<< HEAD
+
 MongoDb es una base de datos no relacional, lo cuál significa que **NO** emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
 
 En su lugar, mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**. Ademas de tener una representación binaria, tiene más tipos de datos que el tradicional JSON.
-=======
-MongoDB es una base de datos no relacional, lo cuál significa que emplea el lenguaje SQL para la administración de datos, tampoco emplea el concepto de tabla y relación de tablas.
-En su lugar, Mongo utiliza notación JSON, en donde al objeto común JSON le establece la nomenclatura de documento, sin embargo su almacenaje es en formato binario es por eso que dichos documentos son conocidos como **BSON documents**, ademas de tener una representación binaria, tiene más tipos de datos que el tradicional JSON.
->>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
+
 
 Para Mongo lo siguiente es un documento:
 
@@ -70,13 +67,8 @@ Pero tambien se puede asignar  a algún valor de forma explicita ``` {"x" : Obje
 
 https://docs.mongodb.com/manual/introduction/
 
-<<<<<<< HEAD
-## Operaciones básicas CRUD
-Las Operaciones básicas de manipulación de dats en mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
-=======
 ## Operaciones basicas CRUD
 Las Operaciones basicas de manipulación de datos en Mongo es por medio de funciones, a continuación se muestra la sintaxis de cada una.
->>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
 
 La documentación básica se encuentra en :
 https://docs.mongodb.com/manual/crud/
@@ -86,12 +78,9 @@ Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en 
   ### Create
 
   #### insertOne()
-<<<<<<< HEAD
-  Inserta solamente un documento:
-=======
-  Inserta solamente un documento, el siguiente código inserta un documento a la coleccion contactos.
 
->>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
+  Inserta solamente un documento, el siguiente código inserta un documento a la colección contactos.
+
   ```
       db.contactos.insertOne(
       {
@@ -106,7 +95,7 @@ Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en 
   Inserta varios documentos que le son enviados en un arreglo.
 
   ```
-<<<<<<< HEAD
+
   db.contactos.insertMany(
   [ {
   "nombre":"Juan",
@@ -182,26 +171,7 @@ db.contactos.update(
 ```
 Resultado:
 ![Screenshot](update.PNG)
-=======
-    db.contactos.insertMany(
-    [ {
-    "nombre":"Juan",
-    "Telefono":"55-2424-3535"
-    },{
-    "nombre":"Pedro",
-    "Telefono":"55-2424-6677"
-    } ]
-    )
-  ```
 
-  ### Read
-  ```find``` es la función equivalente a un ```SELECT ``` en SQL.
-  #### find()
-
-    #### findOne()
-  ### Update
-    #### update()
->>>>>>> 802ab6137e8ab8176ce2d8a182f4f649e1c1b77f
     #### updateMany()
     #### replaceOne()
     #### findOneAndUpdate()
