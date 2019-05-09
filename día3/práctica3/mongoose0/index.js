@@ -22,6 +22,7 @@ function nuevoAlumno() {
   });
 }
 
+
 function main() {
   nuevoAlumno();
 }
