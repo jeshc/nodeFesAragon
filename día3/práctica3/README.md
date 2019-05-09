@@ -189,7 +189,7 @@ main();    // ejecutamos main
 
 Resultado:
 
-![Screenshot](insertaVariosREsul.PNG)
+![Screenshot](insertaVariosResul.PNG)
 
 ### mongoose2
 
