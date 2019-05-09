@@ -42,7 +42,7 @@ Mongo tambien maneja el concepto *documento embebido*, para explicarlo tenemos e
 Donde la parte derecha de ``` nombre ``` es un documento embebido.
 
 ## Colecciones
-Al conjunto de documentos BSON, MongoDB le asigna el nombre(concepto) de Colección; una colección a su vez es almacenada en una base de datos ```db ```.
+Al conjunto de documentos BSON, MongoDB le asigna el nombre(concepto) de Colección; una colección a su vez es almacenada en una base de datos ```db```.
 Al momento de insertar un documento, si no existe la colección, Mongo la crea. Tambien en tiempo de ejecución la estructura de una colección puede cambiar, es decir los campos de los documentos que almacena pueden modificarse (crecer o disminuir) en tiempo de ejecución. Esta caracteristica es la que le da alto rendimiento. Sin embargo se delega al programador establecer integridad y consistencia vía código fuente.
 
 
@@ -111,7 +111,7 @@ Una página con un shell interacrtivo para hacer consultas CRUD se encuentra en 
 
   ### Read
   #### find()
-  La funcIón ```db.contactos.find()``` regresa todos los documentos dentro de la colección contactos.
+  La función ```db.contactos.find()``` regresa todos los documentos dentro de la colección contactos.
 
   Para hacer lo equivalente a un ``` where nombre="Juan" ``` es como sigue:
   ```
@@ -125,7 +125,20 @@ db.contactos.find({
     "edad":{$gt:23}
   })
 ```
-Pendiente: operadores    $lt, $in,  ...
+  ### Listado de operadores relacionales
+
+  - equal/igual  ```$eq```
+  - low than/menor que   ```$lt```
+  - low than equal/menor o igual que   ```$lte```
+  - greater than/mayor que   ```$gt```
+  - greater than equal/mayor o igual que   ```$gte```
+  - not equal/distinto   ```$ne```
+  - in/dentro de   ```$in```
+  - not in/no dentro de   ```$nin```
+
+    Recuperar todos los libros que tienen un precio mayor a 40:  
+    ```db.libros.find({ precio: { $gt:40 }})```
+
 
 #### findOne()
 La función findOne regresará solamente el primer registro encontrado según los criterios de busqueda. Por ejemplo la siguiente consulta regresa solamente el primer registro con edad mayor de 20.
