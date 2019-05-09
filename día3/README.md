@@ -30,7 +30,7 @@ Práctica 2
 
 Práctica 3
 
-###### Acceso a mongoDb con el packete Node.js mongoose
+###### Acceso a mongoDb con el paquete Node.js mongoose
 
 - Introducción a mongoose
 - Conexión básica
