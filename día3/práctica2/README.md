@@ -127,6 +127,7 @@ db.contactos.find({
 ```
 ### Listado de operadores relacionales
 
+    - Creación de un servidor con el paquete ```http```.
     - $eq -equal - igual
     - $lt - low than - menor que
     - $lte - low than equal - menor o igual que
