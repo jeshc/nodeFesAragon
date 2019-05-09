@@ -185,10 +185,11 @@ function main() {
 main();    // ejecutamos main
 ```
 
-![Screenshot](insertavarios.PNG)
+![Screenshot](insertaVarios.PNG)
 
 Resultado:
-![Screenshot](insertavariosREsul.PNG)
+
+![Screenshot](insertaVariosREsul.PNG)
 
 ### mongoose2
 
