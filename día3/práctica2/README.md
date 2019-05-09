@@ -127,15 +127,15 @@ db.contactos.find({
 ```
   ### Listado de operadores relacionales
 
-    - ```$eq``` - equal/igual
-    - ```$lt``` - low than/menor que
-    - ```$lte``` - low than equal/menor o igual que
-    - ```$gt``` - greater than/mayor que
-    - ```$gte``` - greater than equal/mayor o igual que
-    - ```$ne``` - not equal/distinto
-    - ```$in``` - in/dentro de
-    - ```$nin``` - not in/no dentro de
-    
+     ```$eq``` - equal/igual
+     ```$lt``` - low than/menor que
+     ```$lte``` - low than equal/menor o igual que
+     ```$gt``` - greater than/mayor que
+     ```$gte``` - greater than equal/mayor o igual que
+     ```$ne``` - not equal/distinto
+     ```$in``` - in/dentro de
+     ```$nin``` - not in/no dentro de
+
     Recuperar todos los libros que tienen un precio mayor a 40:  
     ```db.libros.find({ precio: { $gt:40 }})```
 
