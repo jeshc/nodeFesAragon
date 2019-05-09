@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://hcjesus:dios0987@cluster0-p1uhr.gcp.mongodb.net/
 
 function nuevoAlumno() {
   var alum = Alumno({
-    numeroCuenta: "223344"
+    numeroCuenta: "55665566"
   });
 
   alum.save(function(err, data) {
