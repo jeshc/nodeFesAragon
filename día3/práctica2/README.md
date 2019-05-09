@@ -137,7 +137,8 @@ db.contactos.findOne({"edad":{$gt:20}});
 ![Screenshot](findOne.PNG)
 
 ### Update
-  La sintaxis para hacer un update es la siguiente:
+  La sintaxis para hacer un update es ```db.collection.update(query, update, options) ``` con mayor detalle:
+
 ```
 db.collection.update(
    <query>,
@@ -172,24 +173,77 @@ db.contactos.update(
 Resultado:
 ![Screenshot](update.PNG)
 
-    #### updateMany()
-    #### replaceOne()
-    #### findOneAndUpdate()
+#### updateMany()
+Sigue la misma sintaxis:    ```db.collection.update(query, update, options) ``` sin embargo modifica todos los registros que conicidadn con la sección ```query```.
 
-  ### Delete
-    #### deleteOne()
-    #### deleteMany()
+
+#### replaceOne()
+Reemplaza un documento en base a las coincidencias de la seccion filter: ```db.collection.replaceOne(filter, replacement, options)```  
+
+
+### Delete
+Eliminar documentos de una colección, con la notación: ``` db.collection.deleteOne(<filter>,<options>) ```
+#### deleteOne()
+Ejemplo: Eliminar al contacto de nombre Juan y edad 33
+```
+db.contacto.deleteOne({
+  "nombre":"Juan",
+  "edad":33
+  });
+
+```
+
 ## Creación de una cuenta DBaaS en MongoDB Atlas.
+La siguiente es la guía para crear una base de datos en MongoDB Atlas.
 
-![Screenshot](image1.PNG)
+1. Accede a la direccion http://mlab.com y selecciona el boton azul con la leyenda ``` signup ``` para crear una cuenta.
+
+  ![Screenshot](image1.PNG)
+
+2. Al terminar de crear la cuenta y acceder a la misma te solicitará crear tu primer cluster.
+
 ![Screenshot](image2.PNG)
+
+3. Selecciona AWS o Google que tienen una capa gratuita.
+
 ![Screenshot](image3.PNG)
+
+4. En la siguiente pantalla elige la region donde se creará tu BD. (IOWA gratis).
+
 ![Screenshot](image4.PNG)
+
+5. Por ùltimo presiona el botón crear cluster para finalizar.
+
 ![Screenshot](image5.PNG)
+
+6. La siguiente imagen muestra cuando tu cluster mongo esta creado. El siguiente paso es crear cuantas de acceso para conectarnos desde node.
+
+
 ![Screenshot](image6.PNG)
+
+7. Selecciona la pestaña security y da de alta un unsario ``` ADD NEW USERS ```
+
 ![Screenshot](image7.PNG)
+
+8. ingresa un nombre de usuario, una contraseña y establece los permisos de lectura y escritura en cualquier BD.
+Finalizar seleccionando el botón Add user.
+
 ![Screenshot](image8.PNG)
-![Screenshot](image9PNG)
+
+9. Selecionar La pestaña IP WhiteList ny el botón verde ``` ADD IP ADDRESS ```
+
+
+![Screenshot](image9.PNG)
+
+10. ingresa el valor 0.0.0.0/0 para indicar que queremos tener acceso desde cualquier IP (recomendable solo para pruebas).
+
+
 ![Screenshot](image10.PNG)
+
+.por ùltimo seleccionamos el botón connect
+
 ![Screenshot](image11.PNG)
+
+seleccionamos la opción ``` CONNECT YOUR APPLICATION ``` Y copiamos la URL de conexión, que emplearemos en la siguiente práctica.
+
 ![Screenshot](image12.PNG)
