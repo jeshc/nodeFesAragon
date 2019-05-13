@@ -289,3 +289,6 @@ El resultado es el siguiente:
        ``` {"metodo":"PATCH" , "mensaje":"Ciao", "accion":"Actualizar en bd"} ```
 
 ***NOTA.-*** Se requiere modificar la cabecera ``` Content-Type ```
+
+## body parsing
+pendiente
