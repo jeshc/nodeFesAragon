@@ -1,21 +1,21 @@
 
 # Express generator
 
-Express generator es un paquete de Node.js es una herramienta generadora de proyectos express.
+Express generator es un paquete de Node.js es una herramienta generadora de proyectos Express.
 
 Para instalar express-generator teclea:
 ```
 npm install -g express-generator
 ```
 
-Una vez instalado es posible generar un proyecto expresss con un solo comando
+Una vez instalado es posible generar un proyecto Express con un solo comando
 ```
 $ express
 ```
 
 ![Screenshot](image1.PNG)
 
-El cial genera una aplicación Express con sus configuraciones y  el Middleware por defecto.
+El cual genera una aplicación Express con sus configuraciones y  el Middleware por defecto.
 
 ![Screenshot](image2.PNG)
 
@@ -40,7 +40,7 @@ Express  puede emplear como Middleware un motor de vista (View Engine), por defe
 - express-tl
 - vuexpress
 
-Para configurar la maquina de render se debe establecer dos configuraciones:
+Para configurar la máquina de render se debe establecer dos configuraciones:
 
 **views**, el directorio donde se encuentran los archivos de plantilla.
 ```
@@ -52,10 +52,10 @@ app.set('view engine', 'jade')
 ```
 
 ## Handlebars (view engine)
-[https://handlebarsjs.com/](https://handlebarsjs.com/)
-Handlebars es una view engine que permite generar respuestas html con poco esfuerzo.
+[Handlebars](https://handlebarsjs.com/)
+ es una **view engine** que permite generar respuestas *html* con poco esfuerzo.
 
-para generar un proyeto express con handlebars ejecuta el comando:
+para generar un proyeto Express con handlebars ejecuta el comando:
 
 ```
 express --view hbs <nombreDelProyecto>
@@ -65,13 +65,13 @@ express --view hbs <nombreDelProyecto>
 
 ### express3
 
-ejercicio crea el proyecto express3 con el comando anterior.
+Ejercicio crea el proyecto express3 con el comando anterior.
 
 ## express4
-En elproyecto express 4 tenemos un proyecto con handlebars y mongoose.
+En el proyecto express 4 tenemos un proyecto con handlebars y mongoose.
 
 
-### instalar mongoose
+### Instalar mongoose
 
 ```
 npm install mongoose --save
@@ -96,7 +96,7 @@ Nuevo archivo package.json
   }
 }
 ```
-El sigiente es el modelo.
+El siguiente es el modelo.
 ```
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -112,10 +112,12 @@ module.exports = mongoose.model('Computadora', ComputadoraSchema);
 ```
 Código de conexión a mongoose y carga de modelo
 ![Screenshot](image4_1.PNG)
+
 Y la nueva ruta
 
 ![Screenshot](image4_2.PNG)
-El archivo manejador de ruta en el directorio routes:
+
+El archivo manejador de ruta en el directorio router:
 
 ```
 var express = require('express');
