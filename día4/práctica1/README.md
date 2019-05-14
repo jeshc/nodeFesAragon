@@ -141,5 +141,3 @@ En el proyecto **express1** ya se encuentra el recurso público **index.html** a
   - Agregar una imagen desde el directorio *public*
   - Resultado esperado:
   ![Screenshot](image5.PNG)
-
-# Express generator
