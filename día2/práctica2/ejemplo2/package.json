@@ -1,0 +1,25 @@
+{
+  "name": "ejemplo2",
+  "version": "0.0.1",
+  "description": "un ejemplo en clase de IS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env FORCE_COLOR=1 node index.js"
+  },
+  "keywords": [
+    "node",
+    "is",
+    "npm",
+    "init"
+  ],
+  "author": "JesusHC",
+  "license": "MIT",
+  "dependencies": {
+    "asciify": "^1.3.5",
+    "chalk-animation": "1.6.0"
+  },
+  "devDependencies": {
+    "request": "^2.88.0"
+  }
+}

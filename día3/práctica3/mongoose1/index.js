@@ -24,6 +24,7 @@ function nuevoAlumno() {
       console.log("------------------------ERROR --------------------------");
     }else {
       console.log("------------------------OK ---------------------------");
+      console.log(data);
     }
   });
 }
@@ -52,7 +53,7 @@ function nuevosAlumnos() {
 }
 function main() {
   //nuevoAlumno();
-  //nuevosAlumnos();
+  nuevosAlumnos();
 }
 
 main();    // ejecutamos main

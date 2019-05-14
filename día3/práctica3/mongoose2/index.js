@@ -12,6 +12,11 @@ function findAlumnoPorNumCta(nc){
   });
 }
 
+function findBySemestre(sem){
+
+}
+
+
 function findByNombre(nom){
   Alumno.find({'nombre.primer':nom},function(err,documentos){
     console.log(documentos);
@@ -19,7 +24,8 @@ function findByNombre(nom){
 }
 
 function cambiarNombre(numcta, nuevoNombre){
-  Alumno.findOneAndUpdate({numeroCuenta:numcta},{'nombre.primer':nuevoNombre},function(err,data){
+  Alumno.findOneAndUpdate({numeroCuenta:numcta},
+    {'nombre.primer':nuevoNombre},function(err,data){
     if (err) {
       console.log(err);
     }
@@ -30,9 +36,9 @@ function cambiarNombre(numcta, nuevoNombre){
 
 function main() {
 
-  //findAlumnoPorNumCta(223344);
+  //findAlumnoPorNumCta("1111111");
   //findByNombre("Jesús");
-  //cambiarNombre("4444444","RENÉ");
+  cambiarNombre("4444444","RENÉ dfsdfdfdsfsd");
 
 }
 
