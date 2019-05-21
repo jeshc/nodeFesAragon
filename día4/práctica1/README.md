@@ -1,4 +1,4 @@
-# Introducción al framework Espress.js
+# Introducción al framework Express.js
 #### Qué es Express.
 Es un framework para el desarrollo de aplicaciones Web basado en el paquete ```http``` de Node.js  y  el módulo [Connect](https://github.com/senchalabs/connect), que se encarga de unir otros módulos para expandir la funcionalidad de Express(Middleware).
 
@@ -140,5 +140,5 @@ En el proyecto **express1** ya se encuentra el recurso público **index.html** a
   - Agregar una regla css para cambiar el color de el tag H1 a verde.
   - Agregar una imagen desde el directorio *public*
   - Resultado esperado:
-  
+
   ![Screenshot](image5.PNG)

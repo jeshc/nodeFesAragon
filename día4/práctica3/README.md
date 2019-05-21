@@ -2,11 +2,11 @@
 
 
 REST es el acrónimo de Representational State Transfer, una arquitectura para el desarrollo de sistemas web sobre el protocolo HTTP. Esta tecnología fue propuesta por Roy Fielding (coautor de la especificación HTTP); el principal objetivo  es mejorar la portabilidad de información entre plataformas y facilitar la escalabilidad de los sistemas. La propuesta está centrada en la definición y estandarización de una interfaz uniforme diseñada para ser eficiente en la transferencia de datos hipermedia de granularidad amplia.
-En cuanto al soporte http el REST establece que se deben realizar las 3 siguientes adecuaciones para desarrollar un sistema de este tipo:
+En cuanto al soporte *http* el REST establece que se deben realizar las 3 siguientes adecuaciones para desarrollar un sistema de este tipo:
 1.	La correcta implementación de los métodos del protocolo HTTP  : OPTIONS, HEAD, GET, POST, PUT, DELETE. TRACE y CONNECT.
-2.	Adecuada construcción de las URI (universal Resource Identifier) con la estructura definida en la especificacion estandar que consta de:
+2.	Adecuada construcción de las URI (Universal Resource Identifier) con la estructura definida en la especificacion estandar que consta de:
 protocolo://host[:puerto]/recurso?parametro=valor&…
-3.	La implementación de manejo de información de intercambio combinada con URI`s de referencia. Por ejemplo:
+3.	La implementación de manejo de información de intercambio combinada con URI´s de referencia. Por ejemplo:
 http://www.elgainternet.com/api/lectura/:id
 
 ```
@@ -19,7 +19,7 @@ http://www.elgainternet.com/api/lectura/:id
 ```
 
 
-La siguiente tabla establece un resumen de cómo deben respinder los diferentes verbos http en un API REST.
+La siguiente tabla establece un resumen de cómo deben responder los diferentes verbos *http* en un API REST.
 
 #### Verbos REST
 
@@ -33,8 +33,8 @@ DELETE | Delete |  200 (OK) ó 404 (No encontrado) |  405 Acción no permitida.
 
 ### Proyecto final
 1. Desarrollar un API Rest con los Verbos definidos en la tabla anterior y desplegarlo en la plataforma Heroku.
-2. Los campos del api REST debe contener al  menos una imagen. (o la url de una imagen).
-3. Incluir una interfaz gráfica para el api REST de los verbos:
-  - get por id
-  - post
-  - delete por id
+2. Los campos del API REST debe contener al  menos una imagen. (o la url de una imagen).
+3. Incluir una interfaz gráfica para el API REST de los verbos:
+  - GET por id
+  - POST
+  - DELETE por id
