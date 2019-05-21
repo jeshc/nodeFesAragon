@@ -41,4 +41,4 @@ En base al tema seleccionado, programar lo siguiente:
   - POST
   - DELETE por id
 4. Subir su aplicación en heroku.com.
-5. Hacer capturas de pantalla de las pruebas con postman y subirlas a la plataforma.
+5. Hacer capturas de pantalla de las pruebas con postman y subirlas a la plataforma cta.aragon.unam.mx/aulavirtual.
