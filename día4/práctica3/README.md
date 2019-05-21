@@ -32,9 +32,13 @@ PATCH | Update |  200 (OK) or 204 (Body sin contenido). 404 (No encontrado) |  4
 DELETE | Delete |  200 (OK) ó 404 (No encontrado) |  405 Acción no permitida.
 
 ### Proyecto final
+En base al tema seleccionado, programar lo siguiente:
+
 1. Desarrollar un API Rest con los Verbos definidos en la tabla anterior y desplegarlo en la plataforma Heroku.
 2. Los campos del API REST debe contener al  menos una imagen. (o la url de una imagen).
 3. Incluir una interfaz gráfica para el API REST de los verbos:
   - GET por id
   - POST
   - DELETE por id
+4. Subir su aplicación en heroku.com.
+5. Hacer capturas de pantalla de las pruebas con postman y subirlas a la plataforma.
