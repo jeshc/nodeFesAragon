@@ -7,7 +7,7 @@ var Computadora= require('../models/computers');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   Computadora.find({},function(err,datos){
-    res.json(datos);
+    res.status(200).json(datos);
   });
 
 });

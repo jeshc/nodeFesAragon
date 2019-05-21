@@ -7,7 +7,7 @@ var User = require('../models/user');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   User.find({}, function(err, datos) {
-    res.json(datos);
+    res.status(200).json(datos);
   });
 
 });
@@ -58,8 +58,13 @@ router.delete('/:userId', function(req, res, next) {
     if (err) {
       res.status(404).json(err);
     }
-    res.status(201).json(data);
+    res.status(200).json(data);
   });
 });
+
+router.delete('/',function(req,res,next){
+  res.status(405).json({mensaje:'Accion no permitida'});
+});
+
 
 module.exports = router;
