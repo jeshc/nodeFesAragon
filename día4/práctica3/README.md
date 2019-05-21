@@ -30,3 +30,11 @@ GET | Read  |  200 OK Resp.: Un sólo documento |  /users/: 200 OK, Resp.: Todos
 PUT | Replace / Update |  200 OK ó 204 (Body sin contenido). Ó 404 (id no encontrado) | 405 Acción no permitida.
 PATCH | Update |  200 (OK) or 204 (Body sin contenido). 404 (No encontrado) |  405 Acción no permitida.
 DELETE | Delete |  200 (OK) ó 404 (No encontrado) |  405 Acción no permitida.
+
+### Proyecto final
+1. Desarrollar un API Rest con los Verbos definidos en la tabla anterior y desplegarlo en la plataforma Heroku.
+2. Los campos del api REST debe contener al  menos una imagen. (o la url de una imagen).
+3. Incluir una interfaz gráfica para el api REST de los verbos:
+  - get por id
+  - post
+  - delete por id
