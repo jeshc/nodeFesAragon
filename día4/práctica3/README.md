@@ -8,9 +8,25 @@ En cuanto al soporte http el REST establece que se deben realizar las 3 siguient
 protocolo://host[:puerto]/recurso?parametro=valor&…
 3.	La implementación de manejo de información de intercambio combinada con URI`s de referencia. Por ejemplo:
 http://www.elgainternet.com/api/lectura/:id
+
+```
 { "_id": "55380b5392ee91637901e3ed",
           "mac": "90:a2:da:0e:d6:00",
           "date": "2015-04-22 20:59:13",
           "percentage": 21,     "__v": 0,
 	   “link”:”http://201.175.6.109:8080/lectura/55380b5392ee91637901e3ed”
-	}
+}
+```
+
+
+La siguiente tabla establece un resumen de cómo deben respinder los diferentes verbos http en un API REST.
+
+#### Verbos REST
+
+Método HTTP | Operación CRUD | Elemento específico(/users/{id} ) | a la colección entera
+----------- | -------------- | ------------------- | --------------
+POST | Create / insert |  404 |  /users/ header code 201 created, Res.: el documento con nuevo _id
+GET | Read  |  200 OK Resp.: Un sólo documento |  /users/: 200 OK, Resp.: Todos los documentos
+PUT | Replace / Update |  200 OK ó 204 (Body sin contenido). Ó 404 (id no encontrado) | 405 Acción no permitida.
+PATCH | Update |  200 (OK) or 204 (Body sin contenido). 404 (No encontrado) |  405 Acción no permitida.
+DELETE | Delete |  200 (OK) ó 404 (No encontrado) |  405 Acción no permitida.
