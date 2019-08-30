@@ -62,7 +62,8 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
 5. Una vez instaladas las dependencias creamos el archivo principal index.js  y agregamos el siguiente código:
 
-       ```
+
+```
        const gis = require('chalk');
        var asciify= require('asciify');
            function pinta(letra, index) {
@@ -137,7 +138,7 @@ Cómo se muestra en la imagen se instalan 7 paquetes, producto de la sección ``
 
            main();
 
-           ```
+```
 
 
 
