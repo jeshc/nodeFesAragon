@@ -1,13 +1,13 @@
-Dia 3
+# Dia 3
 
 
-Práctica 1
+## Práctica 1
 ###### http
 - Creación de un servidor con el paquete ```http```.
 - Parseo de url´s
 
 
-Práctica 2
+## Práctica 2
 
 ###### mongodb
 
@@ -28,7 +28,7 @@ Práctica 2
     - deleteMany()
 - Creación de una cuenta DBaaS en MongoDB Atlas.
 
-Práctica 3
+## Práctica 3
 
 ###### Acceso a mongoDb con el paquete Node.js mongoose
 
