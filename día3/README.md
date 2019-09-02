@@ -1,4 +1,4 @@
-# Dia 3
+# Dia 3 Introducción a monngoDB y Mongoose
 
 
 ## Práctica 1
