@@ -8,7 +8,7 @@ fs.readFile('loremLigero.txt', 'utf8', function(err, contents) {
     console.log(chalk.red("error"));
   } else {
     console.log('Finalizando lectura lorem ligero 1');
-    console.log(chalk.blue(contents));
+    console.log(chalk.green(contents));
   }
 });
 fs.readFile('lorem.txt', 'utf8', function(err, contents) {

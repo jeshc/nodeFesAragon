@@ -6,7 +6,7 @@ var path=require('path');
 var publicPath=path.resolve(__dirname,"public");
 app.use(express.static(publicPath));
 
-app.use(logger('dev'));
+app.use(logger('short'));
 app.get("/hola", function(request, response) {
   response.send("¡Hola mundo Express !");
 });

@@ -1,0 +1,23 @@
+{
+  "name": "ejemplo3",
+  "version": "0.1.0",
+  "description": "letreros con animaciones de color",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env FORCE_COLOR=1 node index.js"
+  },
+  "keywords": [
+    "ico",
+    "texto",
+    "animado",
+    "fes",
+    "aragon"
+  ],
+  "author": "jeshc",
+  "license": "MIT",
+  "dependencies": {
+    "asciify": "^1.3.5",
+    "chalk-animation": "1.6.0"
+  }
+}

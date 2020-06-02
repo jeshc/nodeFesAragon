@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Alumno = require('./models/alumnos.js');
 
-mongoose.connect('mongodb+srv://developer:dios0987@cluster0-p1uhr.gcp.mongodb.net/facultadDB?retryWrites=true', {
+mongoose.connect('mongodb+srv://usuario1: hCMJpmZD9EITxUT5@cluster0-ijk3v.mongodb.net/informacion?retryWrites=true', {
     useNewUrlParser: true
   }).then(() => {
     console.log('Conectado a Mongo DB Atlas')

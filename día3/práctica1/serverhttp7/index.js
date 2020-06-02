@@ -11,7 +11,7 @@ var server = Http.createServer(function(request, response) {
   console.log(uri_parseada.path);
   if(uri_parseada.path == "/hola"){
   	response.writeHead(200,"Content-Type:text/html");
-  	response.write("<h1 style="color:green" > Hola a todos</h1>");
+  	response.write("<h1 style=\"color:green\" > Hola a todos</h1>");
   }
   if(uri_parseada.path == "/saludo"){
   	response.writeHead(200,"Content-Type:text/json");
