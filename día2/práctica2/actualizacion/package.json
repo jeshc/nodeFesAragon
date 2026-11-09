@@ -1,0 +1,22 @@
+{
+  "name": "animation",
+  "version": "1.0.0",
+  "description": "demo de conf de apps node",
+  "keywords": [
+    "node",
+    "anim",
+    "timeout"
+  ],
+  "license": "ISC",
+  "author": "jeshc",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start":"node index2.js" 
+  },
+  "dependencies": {
+    "asciify": "^1.3.2",
+    "chalk-animation": "^2.0.3"
+  }
+}
