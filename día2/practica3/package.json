@@ -1,0 +1,19 @@
+{
+  "name": "web_server",
+  "version": "1.0.0",
+  "description": "mi primer web server",
+  "keywords": [
+    "web2",
+    "web",
+    "servr",
+    "node"
+  ],
+  "license": "ISC",
+  "author": "jeshc",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+}
