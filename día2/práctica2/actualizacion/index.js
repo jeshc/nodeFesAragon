@@ -1,4 +1,4 @@
-const chalkAnimation = require('chalk-animation');
+const chalkAnimation = require('chalk-animation').default;
 
 chalkAnimation.karaoke('ICO FES Aragón UNAM'); // pulse, glitch, radar, meon, karaoke
 setTimeout( () => {

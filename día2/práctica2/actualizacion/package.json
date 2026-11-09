@@ -13,7 +13,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "start":"node index.js" 
+    "start":"node index2.js"
   },
   "dependencies": {
     "asciify": "^1.3.2",
